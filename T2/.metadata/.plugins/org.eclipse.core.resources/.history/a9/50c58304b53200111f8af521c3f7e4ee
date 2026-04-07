@@ -1,0 +1,67 @@
+/*
+ * funciones.c
+ *
+ *  Created on: Apr 6, 2026
+ *      Author: sebas
+ */
+
+/// Get a Message from a Queue or timeout if Queue is empty.
+/// \param[in]     mq_id         message queue ID obtained by \ref osMessageQueueNew.
+/// \param[out]    msg_ptr       pointer to buffer for message to get from a queue.
+/// \param[out]    msg_prio      pointer to buffer for message priority or NULL.
+/// \param[in]     timeout       \ref CMSIS_RTOS_TimeOutValue or 0 in case of no time-out.
+/// \return status code that indicates the execution status of the function.
+// osStatus_t osMessageQueueGet (osMessageQueueId_t mq_id, void *msg_ptr, uint8_t *msg_prio, uint32_t timeout);
+
+#include "main.h"
+#include "FreeRTOS.h"
+#include "cmsis_os.h"
+#include "gpio.h"
+#include <math.h>
+#include <stdio.h>
+//if(osMessageQueueGet(FIFO_QueueHandle,&dato,NULL,osWaitForever)==osOK){
+extern osMessageQueueId_t ;
+
+void Adquisicion(void *placeholder){
+	uint32_t tick_count;
+	uint32_t periodo=100;
+	uint16_t valor_adc;
+	while(1){
+		tick_count = osKernelGetTickCount()+periodo;
+		HAL_ADC_Start(&hadc2);
+		if(HAL_ADC_PollForConversion(&hadc2, 5)==HAL_OK){
+			valor_adc=HAL_ADC_GetValue(&hadc2);
+			osMessageQueuePut(Q_ADCHandle, &valor_adc, 0, 5);
+		}
+		HAL_ADC_Stop(&hadc2);
+		osDelayUntil(tick_count);
+	}
+}
+void Procesamiento(void *placeholder){
+	uint16_t valor_adc;
+	char LED = '1';
+	float analog_voltage;
+	while(1){
+		if(osMessageQueueGet(Q_ADCHandle, &valor_adc, 0, osWaitForever)==osOK){
+			analog_voltage = (float) valor_adc*(3.3f/4095.0f);
+			if(analog_voltage>=0.0f && analog_voltage < 1.1f) LED = '1';
+			else if(analog_voltage>=1.1f && analog_voltage<2.2f)LED = '2';
+			else LED = '3';
+			osMessageQueuePut(Q_LEDHandle, &LED, 0, 5);
+		}
+	}
+}
+void Control(void *placeholder){
+	char LED;
+	while(1){
+		if(osMessageQueueGet(Q_LEDHandle,&LED,0,osWaitForever)==osOk){
+			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_RESET);
+			HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_RESET);
+			if(LED=='1') HAL_GPIO_WritePin(GPIOC,GPIO_PIN_0,GPIO_PIN_SET);
+			if(LED=='2') HAL_GPIO_WritePin(GPIOC,GPIO_PIN_1,GPIO_PIN_SET);
+			if(LED=='3') HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_SET);
+		}
+	}
+}
+

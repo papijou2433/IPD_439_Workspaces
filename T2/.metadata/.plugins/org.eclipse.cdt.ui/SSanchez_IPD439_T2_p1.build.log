@@ -1,0 +1,10 @@
+15:17:01 **** Incremental Build of configuration Debug for project SSanchez_IPD439_T2_p1 ****
+make -j12 all 
+arm-none-eabi-size   SSanchez_IPD439_T2_p1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18232	    104	   8456	  26792	   68a8	SSanchez_IPD439_T2_p1.elf
+Finished building: default.size.stdout
+ 
+
+15:17:01 Build Finished. 0 errors, 0 warnings. (took 439ms)
+

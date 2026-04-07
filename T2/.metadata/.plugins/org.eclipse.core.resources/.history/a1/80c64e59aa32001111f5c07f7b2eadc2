@@ -1,0 +1,40 @@
+/*
+ * funciones.c
+ *
+ *  Created on: Apr 6, 2026
+ *      Author: sebas
+ */
+
+/// Get a Message from a Queue or timeout if Queue is empty.
+/// \param[in]     mq_id         message queue ID obtained by \ref osMessageQueueNew.
+/// \param[out]    msg_ptr       pointer to buffer for message to get from a queue.
+/// \param[out]    msg_prio      pointer to buffer for message priority or NULL.
+/// \param[in]     timeout       \ref CMSIS_RTOS_TimeOutValue or 0 in case of no time-out.
+/// \return status code that indicates the execution status of the function.
+// osStatus_t osMessageQueueGet (osMessageQueueId_t mq_id, void *msg_ptr, uint8_t *msg_prio, uint32_t timeout);
+
+#include "main.h"
+#include "FreeRTOS.h"
+#include "cmsis_os.h"
+#include <math.h>
+#include <stdio.h>
+//if(osMessageQueueGet(FIFO_QueueHandle,&dato,NULL,osWaitForever)==osOK){
+extern osMessageQueueId_t ;
+
+void Adquisicion(void *placeholder){
+	uint32_t tick_count;
+	uint32_t periodo=100;
+	while(1){
+		tick_count = osKernelGetTickCount()+periodo;
+		HAL_ADC_Start(&hadc2);
+		if(HAL_ADC_)
+		osDelayUntil(tick_count);
+	}
+}
+void Procesamiento(void *placeholder){
+
+}
+void Control(void *placeholder){
+	
+}
+

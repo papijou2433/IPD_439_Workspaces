@@ -1,0 +1,16 @@
+/*
+ * interrupciones.c
+ *
+ *  Created on: Apr 6, 2026
+ *      Author: sebas
+ */
+extern volatile int contador;
+#include "main.h"
+#include "cmsis_os.h"
+#include "usart.h"
+
+void HAL_USART_RxCpltCallback(USART_HandleTypeDef *husart){
+	if(huart->Instance ==USART2){
+
+	}
+}

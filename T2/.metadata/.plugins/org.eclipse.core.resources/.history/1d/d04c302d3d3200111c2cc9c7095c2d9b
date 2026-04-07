@@ -1,0 +1,58 @@
+/*
+ * funciones.c
+ *
+ *  Created on: Apr 6, 2026
+ *      Author: sebas
+ */
+
+/// Get a Message from a Queue or timeout if Queue is empty.
+/// \param[in]     mq_id         message queue ID obtained by \ref osMessageQueueNew.
+/// \param[out]    msg_ptr       pointer to buffer for message to get from a queue.
+/// \param[out]    msg_prio      pointer to buffer for message priority or NULL.
+/// \param[in]     timeout       \ref CMSIS_RTOS_TimeOutValue or 0 in case of no time-out.
+/// \return status code that indicates the execution status of the function.
+// osStatus_t osMessageQueueGet (osMessageQueueId_t mq_id, void *msg_ptr, uint8_t *msg_prio, uint32_t timeout);
+
+#include "main.h"
+#include "cmsis_os.h"
+#include "usart.h"
+#include <math.h>
+#include <stdio.h>
+extern osMessageQueueId_t FIFO_Queue;
+void Media_y_desv(void){
+	int arreglo_de_enteros[100];
+	int dato;
+	int i=0,j=0;
+	float media = 0.0;
+	float var  = 0.0;
+	float desv = 0.0;
+	char data_buffer[64];
+	int len;
+	while (1){
+		if(osMessageQueueGet(FIFO_Queue,&dato,NULL,osWaitForever)==osOK){
+			// se recibe corretamente el dato
+			arreglo_de_enteros[i]=dato;
+			i++;
+			if(i==100){
+				media=0.0;
+				var=0.0;
+				desv=0.0;
+				for(j=0;j<100;j++){
+					media+= (float) arreglo_de_enteros[j];
+				}
+				media/=(float) 100.00;
+				for(j=0;j<100;j++){
+					var+=pow(((float) arreglo_de_enteros[j])-media,2);
+				}
+				desv = sqrt(var/100.00);
+				len=sprintf(data_buffer,"%.2f\r\n",media)
+				HAL_USART_Transmit(&husart2,(uint8_t*)data_buffer,len,100);
+				len=sprintf(data_buffer,"%.2f\r\n",var)
+				HAL_USART_Transmit(&husart2,(uint8_t*)data_buffer,len,100);
+				i=0;
+			}
+		}
+			
+	}
+}
+

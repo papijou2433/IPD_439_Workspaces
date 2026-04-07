@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;SSanchez_IPD439_T2_p2B/Core/Src/interrupciones.c&apos;" deleteContents="false" description="Delete resource &apos;SSanchez_IPD439_T2_p2B/Core/Src/interrupciones.c&apos;" element1="/SSanchez_IPD439_T2_p2B/Core/Src/interrupciones.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1775591082264"/>
+</session>

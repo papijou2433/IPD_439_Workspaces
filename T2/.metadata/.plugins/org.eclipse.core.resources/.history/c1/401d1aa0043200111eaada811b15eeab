@@ -1,0 +1,22 @@
+/*
+ * funciones.c
+ *
+ *  Created on: Apr 6, 2026
+ *      Author: sebas
+ */
+
+#include "cmsis_os.h"
+#include "usart.h"
+extern volatile int contador;
+void Media_y_desv(void){
+	int arreglo_de_enteros[100];
+	int i;
+	float media = 0.0;
+	float var  = 0.0;
+	float desv = 0.0;
+	while (1){
+		if(contador==100){
+
+		}
+	}
+}

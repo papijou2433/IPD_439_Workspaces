@@ -1,0 +1,25 @@
+/*
+ * funciones.c
+ *
+ *  Created on: Mar 30, 2026
+ *      Author: sebas
+ */
+
+
+#include "main.h"
+#include "gpio.h"
+extern volatile char f1;
+extern volatile char f2;
+void Task1_start(){
+	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_2, GPIO_PIN_RESET);
+}
+void Task1_stop(){
+	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_2, GPIO_PIN_SET);
+	f2 = 'n';
+}
+void Task2_start(){
+	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_3, GPIO_PIN_RESET);
+}
+void Task2_stop(){
+	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_3, GPIO_PIN_SET);
+}
