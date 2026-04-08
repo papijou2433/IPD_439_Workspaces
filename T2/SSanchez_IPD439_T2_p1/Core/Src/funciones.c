@@ -1,4 +1,4 @@
-Pon/*
+/*
  * funciones.c
  *
  *  Created on: Mar 30, 2026
@@ -9,6 +9,7 @@ Pon/*
 #include "main.h"
 #include "gpio.h"
 #include "cmsis_os.h"
+#include <math.h>
 extern volatile char f1;
 extern volatile char f2;
 void Task1(void){
@@ -36,19 +37,16 @@ void Task2(void){
 /**/
 void Task3_Carga(void *argument){
     uint32_t tick_count;
-    uint32_t periodo = 25; //  debies entrometerse en 1 y 2
-    volatile int i=0;
-    volatile int n=1000;
+    uint32_t periodo = 50; //  debies entrometerse en 1 y 2
+    volatile double i=0;
+    volatile int n=1000000000;
     volatile int basura=0;
     while(1){
         tick_count = osKernelGetTickCount() + periodo;
-
-        // Bucle "dummy" que bloquea la CPU.
-        // volatile asegura que el compilador no borre este código inútil.
-        for( i = 0; i < n; i++){
-            basura = (i * 3)*i / 2;
+        for( i = 10000000; i < n; i++) {
+        	basura = (i * 3)*i / 2;
+        	basura = pow(i,20);
         }
-
         osDelayUntil(tick_count);
     }
 }/**/

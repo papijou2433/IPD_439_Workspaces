@@ -1,0 +1,48 @@
+/*
+ * funciones.c
+ *
+ *  Created on: Mar 30, 2026
+ *      Author: sebas
+ */
+
+
+#include "main.h"
+#include "gpio.h"
+#include "cmsis_os.h"
+extern volatile char f1;
+extern volatile char f2;
+void Task1(void){
+	uint32_t tick_count;
+	uint32_t periodo = 100; // 1 tick = 1ms según el CubeMX -> 100 ticks = 100 ms
+	while(1){
+		tick_count = osKernelGetTickCount() + periodo;
+		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_2, GPIO_PIN_SET);
+		osDelay(10); // 10
+		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_2, GPIO_PIN_RESET);
+		osDelayUntil(tick_count);
+	}
+}
+void Task2(void){
+	uint32_t tick_count;
+	uint32_t periodo = 200; // 1 tick = 1ms según el CubeMX -> 200 ticks = 200 ms
+	while(1){
+		tick_count = osKernelGetTickCount() + periodo;
+		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_3, GPIO_PIN_SET);
+		osDelay(20);
+		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_3, GPIO_PIN_RESET);
+		osDelayUntil(tick_count);
+	}
+}
+/**/
+void Task3_Carga(void *argument){
+    uint32_t tick_count;
+    uint32_t periodo = 25; //  debies entrometerse en 1 y 2
+    volatile int i=0;
+    volatile int n=1000000;
+    volatile int basura=0;
+    while(1){
+        tick_count = osKernelGetTickCount() + periodo;
+        for( i = 0; i < n; i++) basura = (i * 3)*i / 2;
+        osDelayUntil(tick_count);
+    }
+}/**/

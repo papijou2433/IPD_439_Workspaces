@@ -1,2 +1,3 @@
-../Core/Src/funciones.c:14:6:Task1	16	static
-../Core/Src/funciones.c:25:6:Task2	16	static
+../Core/Src/funciones.c:15:6:Task1	16	static
+../Core/Src/funciones.c:26:6:Task2	16	static
+../Core/Src/funciones.c:38:6:Task3_Carga	40	static
