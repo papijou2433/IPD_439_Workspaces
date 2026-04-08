@@ -33,7 +33,6 @@ void Task2(void){
 		osDelayUntil(tick_count);
 	}
 }
-/**/
 void Task3_Carga(void *argument){
     uint32_t tick_count;
     uint32_t periodo = 25; //  debies entrometerse en 1 y 2
@@ -51,4 +50,4 @@ void Task3_Carga(void *argument){
 
         osDelayUntil(tick_count);
     }
-}/**/
+}

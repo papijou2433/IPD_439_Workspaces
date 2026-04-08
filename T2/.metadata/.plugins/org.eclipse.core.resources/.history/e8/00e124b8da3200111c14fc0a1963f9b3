@@ -33,22 +33,20 @@ void Task2(void){
 		osDelayUntil(tick_count);
 	}
 }
-/**/
 void Task3_Carga(void *argument){
     uint32_t tick_count;
-    uint32_t periodo = 25; //  debies entrometerse en 1 y 2
-    volatile int i=0;
-    volatile int n=1000;
-    volatile int basura=0;
+    uint32_t periodo = 50; // Despierta cada 50ms para molestar a las otras tareas
+
     while(1){
         tick_count = osKernelGetTickCount() + periodo;
 
         // Bucle "dummy" que bloquea la CPU.
         // volatile asegura que el compilador no borre este código inútil.
-        for( i = 0; i < n; i++){
-            basura = (i * 3)*i / 2;
+        for(volatile uint32_t i = 0; i < nivel_de_carga; i++){
+            volatile uint32_t calculo_basura = (i * 3) / 2;
+            (void)calculo_basura;
         }
 
         osDelayUntil(tick_count);
     }
-}/**/
+}

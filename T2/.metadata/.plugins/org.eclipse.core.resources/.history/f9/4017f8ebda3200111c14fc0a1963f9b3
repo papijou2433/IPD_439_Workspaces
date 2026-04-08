@@ -98,15 +98,13 @@ int main(void)
   const osThreadAttr_t f2_attr = {
   		  .name = "Task2",
   		  .priority = ( osPriority_t ) osPriorityNormal // también sirve dejarla en 24 xd
-    };/**/
+    };
   const osThreadAttr_t f3_attr = {
   		  .name = "Task3",
-  		  .priority = ( osPriority_t ) osPriorityAboveNormal // también sirve dejarla en 32
+  		  .priority = ( osPriority_t ) osPriorityAboveNormal // también sirve dejarla en 24 xd
     };
-  osThreadNew(Task2, NULL, &f3_attr);
-  /**/
-  osThreadNew(Task1, NULL, &f1_attr);
-  osThreadNew(Task2, NULL, &f2_attr);
+  osThreadId_t f1 = osThreadNew(Task1, NULL, &f1_attr);
+  osThreadId_t f2 = osThreadNew(Task2, NULL, &f2_attr);
   // de lo que revisé de la funcipon en cmsis_os2.c tengo la opción de crear solo algunos atributos,
   // y la función se encarga de generar el resto. NOTA: revisar en debug los valores de atributos
   /* USER CODE END 2 */
