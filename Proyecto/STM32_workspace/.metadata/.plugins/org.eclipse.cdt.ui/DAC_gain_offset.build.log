@@ -1,0 +1,17 @@
+14:17:11 **** Incremental Build of configuration Debug for project DAC_gain_offset ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/callbacks.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/callbacks.d" -MT"Core/Src/callbacks.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/callbacks.o"
+arm-none-eabi-gcc -o "DAC_gain_offset.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\DAC_gain_offset\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="DAC_gain_offset.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: DAC_gain_offset.elf
+ 
+arm-none-eabi-size   DAC_gain_offset.elf 
+arm-none-eabi-objdump -h -S  DAC_gain_offset.elf  > "DAC_gain_offset.list"
+   text	   data	    bss	    dec	    hex	filename
+  20608	     20	   1812	  22440	   57a8	DAC_gain_offset.elf
+Finished building: default.size.stdout
+ 
+Finished building: DAC_gain_offset.list
+ 
+
+14:17:12 Build Finished. 0 errors, 0 warnings. (took 1s.338ms)
+

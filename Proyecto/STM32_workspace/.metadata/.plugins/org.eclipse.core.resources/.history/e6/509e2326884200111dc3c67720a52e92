@@ -1,0 +1,22 @@
+
+
+#include "main.h"
+#include "gpio.h"
+#include "dac.h"
+#include "tim.h"
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+	if(htim->Instance==TIM2){
+        
+    }
+}
+void HAL_DAC_ConvCpltCallbackCh1(DAC_HandleTypeDef *hdac) {
+    if (hdac->Instance == DAC1) {
+
+    }
+}
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+    if (huart->Instance == USART1) {
+
+    }
+}

@@ -1,0 +1,54 @@
+17:14:42 **** Build of configuration Debug for project ADC_gain_offset ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/callbacks.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/callbacks.d" -MT"Core/Src/callbacks.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/callbacks.o"
+arm-none-eabi-gcc -o "ADC_gain_offset.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\ADC_gain_offset\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC_gain_offset.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC_gain_offset.elf
+ 
+arm-none-eabi-size   ADC_gain_offset.elf 
+arm-none-eabi-objdump -h -S  ADC_gain_offset.elf  > "ADC_gain_offset.list"
+   text	   data	    bss	    dec	    hex	filename
+  39292	    476	  42228	  81996	  1404c	ADC_gain_offset.elf
+Finished building: default.size.stdout
+ 
+Finished building: ADC_gain_offset.list
+ 
+17:15:07 **** Incremental Build of configuration Debug for project ADC_gain_offset ****
+make -j12 all 
+arm-none-eabi-size   ADC_gain_offset.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39292	    476	  42228	  81996	  1404c	ADC_gain_offset.elf
+Finished building: default.size.stdout
+ 
+17:15:59 **** Incremental Build of configuration Debug for project ADC_gain_offset ****
+make -j12 all 
+arm-none-eabi-size   ADC_gain_offset.elf 
+   text	   data	    bss	    dec	    hex	filename
+  39292	    476	  42228	  81996	  1404c	ADC_gain_offset.elf
+Finished building: default.size.stdout
+ 
+17:18:01 **** Incremental Build of configuration Debug for project ADC_gain_offset ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/callbacks.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/callbacks.d" -MT"Core/Src/callbacks.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/callbacks.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:109:19: warning: implicit declaration of function 'stats' [-Wimplicit-function-declaration]
+  109 |                   stats(&adc_buffer,&tx_data);
+      |                   ^~~~~
+../Core/Src/main.c:110:48: warning: '
+   ' directive writing 2 bytes into a region of size between 0 and 2 [-Wformat-overflow=]
+  110 |                   len=sprintf(data_buffer,"%.2f\r\n",tx_data);
+      |                                                ^~~~
+../Core/Src/main.c:110:23: note: 'sprintf' output between 6 and 316 bytes into a destination of size 5
+  110 |                   len=sprintf(data_buffer,"%.2f\r\n",tx_data);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "ADC_gain_offset.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\ADC_gain_offset\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC_gain_offset.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: ADC_gain_offset.elf
+ 
+arm-none-eabi-size   ADC_gain_offset.elf 
+arm-none-eabi-objdump -h -S  ADC_gain_offset.elf  > "ADC_gain_offset.list"
+   text	   data	    bss	    dec	    hex	filename
+  39396	    476	  42228	  82100	  140b4	ADC_gain_offset.elf
+Finished building: default.size.stdout
+ 
+Finished building: ADC_gain_offset.list
+ 

@@ -1,0 +1,57 @@
+
+
+#include "main.h"
+#include "gpio.h"
+#include "dac.h"
+#include "tim.h"
+
+volatile uint8_t rx_data;
+volatile uint8_t modo;
+volatile uint16_t contador;
+volatile int debouncer;
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+    if (huart->Instance == USART1) {
+    	// recibo el modo mediante UART
+    	// 0x1 = constante con aumento cada boton, ideal para offset
+    	// 0x2 = función rampa, ideal para ganancia, DNL e INL
+    	// 0x3 = detener
+    	// 0x4 = iniciar
+    	modo = rx_data;
+    	contador = 0;
+    	if(modo==0x3){
+    		HAL_TIM_Base_Stop_IT(&htim2);
+    		HAL_DAC_SetValue(&hdac1, DAC_CHANNEL_1, DAC_ALIGN_12B_R, 0);
+    	}
+    	else if(modo==0x4){
+    		HAL_TIM_Base_Start_IT(&htim2);
+    	}
+    }
+}
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+	if(htim->Instance==TIM2){
+        HAL_DAC_SetValue(&hdac1, DAC_CHANNEL_1, DAC_ALIGN_12B_R, contador);
+    }
+}
+void HAL_DAC_ConvCpltCallbackCh1(DAC_HandleTypeDef *hdac) {
+    if (hdac->Instance == DAC1) {
+    	if(modo==0x2){
+    		contador++;
+    		if(contador>=4096){
+    			contador=0;
+    		}
+    	}
+    	else if(modo==0x1){
+    		debouncer=0;
+    	}
+    }
+}
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
+	if(GPIO_Pin==GPIO_PIN_13){
+		if(modo==0x1 && debouncer==0){
+			debouncer=1;
+			contador++;
+		}
+	}
+}

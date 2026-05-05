@@ -1,0 +1,36 @@
+!SESSION 2026-05-01 17:49:55.425 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-05-01 17:50:14.039
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-05-01 17:50:14.055
+!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\T4\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-05-01 17:50:18.151
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-05-01 17:57:20.010
+!MESSAGE Indexed 'SSanchez_IPD439_T4_p1' (19 sources, 81 headers) in 4.58 sec: 5,116 declarations; 24,147 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0068%)
+!SESSION 2026-05-02 09:55:36.356 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-05-02 09:56:32.649
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-05-02 09:56:32.663
+!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\T4\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-05-02 09:56:42.435
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-05-02 14:22:49.630
+!MESSAGE Indexed 'SSanchez_IPD439_T4_p2' (19 sources, 81 headers) in 2.9 sec: 5,116 declarations; 24,147 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0068%)

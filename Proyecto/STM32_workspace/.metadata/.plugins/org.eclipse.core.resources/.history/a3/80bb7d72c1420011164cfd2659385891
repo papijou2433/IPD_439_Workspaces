@@ -1,0 +1,10 @@
+#include "main.h"
+
+void stats(uint16_t *data, float *media){
+	uint32_t suma=0;
+	int i=0;
+	for(i=0;i<20000;i++){
+		sum+=data[i];
+	}
+	*mean = (float)suma/20000;
+}
