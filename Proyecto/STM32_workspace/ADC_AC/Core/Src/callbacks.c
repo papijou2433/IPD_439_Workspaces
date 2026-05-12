@@ -1,0 +1,50 @@
+
+#include "tim.h"
+#include "adc.h"
+#include "gpio.h"
+#include "usart.h"
+#include "main.h"
+#define datos 16384
+volatile int counter=0;
+volatile int data=0;
+volatile int timer=0;
+volatile int send_data=0;
+volatile uint8_t rx_data;
+extern uint16_t adc_buffer[datos];
+
+
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
+    if (huart->Instance == USART2) {
+    	if(rx_data==0x01&&timer==0){
+    		timer=1;
+    		counter=0;
+			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, GPIO_PIN_SET);
+			HAL_TIM_Base_Start_IT(&htim2);
+    	}
+    	HAL_UART_Receive_IT(&huart2,(uint8_t *)&rx_data, 1);
+    }
+}
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+	if(htim->Instance==TIM2){
+		if(counter<datos){
+			HAL_ADC_Start_IT(&hadc2);
+		}
+		else{
+			timer=0;
+			counter=0;
+			send_data=1;
+			HAL_TIM_Base_Stop_IT(&htim2);
+		}
+		if(counter==datos/2){
+			HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, GPIO_PIN_RESET);
+		}
+	}
+}
+
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc){
+	if(hadc->Instance==ADC2){
+		adc_buffer[counter] = HAL_ADC_GetValue(&hadc2);
+		counter++;
+	}
+}

@@ -86,7 +86,12 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
+  __HAL_PWR_CLEAR_FLAG(PWR_FLAG_WU);
+  HAL_PWR_EnableWakeUpPin(PWR_WAKEUP_PIN1_HIGH);
   extern volatile uint8_t modo;
+  if (__HAL_PWR_GET_FLAG(PWR_FLAG_SB) != RESET) {
+        __HAL_PWR_CLEAR_FLAG(PWR_FLAG_SB);
+    }
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -101,30 +106,39 @@ int main(void)
 		  HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1);
 	  }
 	  else if(modo==1){
-		  modo=0;
+		  HAL_SuspendTick();
 		  HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON, PWR_SLEEPENTRY_WFI);
+		  HAL_ResumeTick();
+		  modo=0;
 	  }
 	  else if(modo==2){
-		  modo=0;
+		  HAL_SuspendTick();
 		  HAL_PWREx_EnterSTOP0Mode(PWR_SLEEPENTRY_WFI);
 		  SystemClock_Config();
+		  HAL_ResumeTick();
+		  modo=0;
 	  }
 	  else if(modo==3){
-		  modo=0;
+		  HAL_SuspendTick();
 		  HAL_PWREx_EnterSTOP1Mode(PWR_SLEEPENTRY_WFI);
 		  SystemClock_Config();
+		  HAL_ResumeTick();
+		  modo=0;
 	  }
 	  else if(modo==4){
-		  modo=0;
+		  HAL_SuspendTick();
+		  __HAL_PWR_CLEAR_FLAG(PWR_FLAG_WU);
 		  HAL_PWREx_EnterSTOP2Mode(PWR_SLEEPENTRY_WFI);
 		  SystemClock_Config();
+		  HAL_ResumeTick();
+		  modo=0;
 	  }
 	  else if(modo==5){
-		  modo=0;
+		  __HAL_PWR_CLEAR_FLAG(PWR_FLAG_WU);
 		  HAL_PWR_EnterSTANDBYMode();
 	  }
 	  else if(modo==6){
-		  modo=0;
+		  __HAL_PWR_CLEAR_FLAG(PWR_FLAG_WU);
 		  HAL_PWREx_EnterSHUTDOWNMode();
 	  }
 	  else{

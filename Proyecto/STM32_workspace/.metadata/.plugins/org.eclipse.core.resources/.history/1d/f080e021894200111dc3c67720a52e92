@@ -1,6 +1,0 @@
-
-
-void ramp_gen(uint16_t *data){
-	int i=0;
-
-}

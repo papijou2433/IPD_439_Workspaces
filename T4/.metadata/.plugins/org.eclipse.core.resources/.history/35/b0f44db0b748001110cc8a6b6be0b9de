@@ -1,0 +1,19 @@
+#include "main.h"
+#include "gpio.h"
+volatile uint8_t modo=0;
+
+//GPIO_PIN_RESET = 0u
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
+	if(GPIO_Pin==GPIO_PIN_13){
+		if(modo==0){
+			if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_3)!=GPIO_PIN_RESET){
+				modo+=1;
+			}if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_2)!=GPIO_PIN_RESET){
+				modo+=2;
+			}
+			if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_10)!=GPIO_PIN_RESET){
+				modo+=4;
+			}
+		}
+	}
+}

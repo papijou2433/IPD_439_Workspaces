@@ -24,9 +24,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="1.0995686"
-     inkscape:cx="280.10985"
-     inkscape:cy="378.33019"
+     inkscape:zoom="0.77751241"
+     inkscape:cx="187.77835"
+     inkscape:cy="506.74432"
      inkscape:window-width="1920"
      inkscape:window-height="1111"
      inkscape:window-x="-9"
@@ -137,7 +137,10 @@
     <g
        id="g16-8"
        inkscape:label="conector"
-       transform="translate(2.3015659,131.86771)">
+       transform="translate(2.3015659,131.86771)"
+       inkscape:export-filename="osc.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150">
       <rect
          style="fill:none;fill-opacity:0.3;stroke:#000000;stroke-width:0.264583"
          id="rect1-2"

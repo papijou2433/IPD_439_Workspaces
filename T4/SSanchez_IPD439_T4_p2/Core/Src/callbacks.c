@@ -1,0 +1,12 @@
+#include "main.h"
+#include "gpio.h"
+volatile uint8_t flag_medir_adc = 0;
+
+
+void HAL_LPTIM_AutoReloadMatchCallback(LPTIM_HandleTypeDef *hlptim)
+{
+    if (hlptim->Instance == LPTIM1) {
+        flag_medir_adc = 1;
+        //HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+    }
+}
