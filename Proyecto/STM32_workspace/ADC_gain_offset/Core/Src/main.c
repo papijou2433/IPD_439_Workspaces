@@ -97,11 +97,16 @@ int main(void)
   MX_TIM2_Init();
   MX_USART2_UART_Init();
   MX_ADC1_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 char data_buffer[16];
 int len;
 int i;
 extern volatile uint8_t rx_data;
+extern volatile int send_data;
+extern volatile int send_temp_data;
+extern volatile uint16_t temp_adc_raw;
+
 HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, GPIO_PIN_RESET);
 HAL_UART_Receive_IT(&huart2,(uint8_t *)&rx_data, 1);
   /* USER CODE END 2 */
@@ -121,6 +126,11 @@ HAL_UART_Receive_IT(&huart2,(uint8_t *)&rx_data, 1);
 		  }
 		  send_data=0;
 	  }
+	  if(send_temp_data == 1){
+		  len = sprintf(data_buffer, "T:%u\r\n", temp_adc_raw);
+		  HAL_UART_Transmit(&huart2, (uint8_t*)data_buffer, len, 100);
+		  send_temp_data = 0;
+		}
   }
   /* USER CODE END 3 */
 }

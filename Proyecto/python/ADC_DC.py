@@ -8,16 +8,14 @@ DATOS_A_LEER = 40000
 
 com = serial.Serial(port=PUERTO, baudrate=BAUDRATE, timeout=20)
 
-# Enviar el comando
 tx_msg = 0x01
 com.write(bytes([tx_msg]))
 datos_adc = []
 
-# Leer exactamente 16354 líneas
+# Leer 16354 líneas
 for i in range(DATOS_A_LEER):
     linea = com.readline()
     if linea:
-        # Decodificar, quitar espacios/saltos y convertir a entero
         valor = int(linea.decode('utf-8').strip())
         datos_adc.append(valor)
     else:
