@@ -109,6 +109,7 @@ extern volatile uint16_t temp_adc_raw;
 
 HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, GPIO_PIN_RESET);
 HAL_UART_Receive_IT(&huart2,(uint8_t *)&rx_data, 1);
+HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
   /* USER CODE END 2 */
 
   /* Infinite loop */

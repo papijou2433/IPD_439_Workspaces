@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 PUERTO = 'COM6'
 BAUDIOS = 115200
 N_MUESTRAS = 16384
-FS = 10000
+FS = 50000
 TRIGGER = b'\x01'
 
 def capturar_uart():
@@ -96,6 +96,12 @@ if __name__ == "__main__":
     datos_adc = capturar_uart()
     
     if datos_adc is not None:
+        ceros = np.sum(datos_adc == 0.0)
+        amplitud_lsb = np.max(datos_adc) - np.min(datos_adc)
+        print(f"\n--- DIAGNÓSTICO FÍSICO ---")
+        print(f"Amplitud Peak-to-Peak de la onda : {amplitud_lsb} LSB")
+        print(f"Muestras perdidas (Caídas a 0.0) : {ceros} muestras")
+        
         f_fund, thd, sinad, enob, fft_mag, res_freq = calcular_metricas_ac(datos_adc, FS)
         
         print("\n=== RESULTADOS DE CARACTERIZACIÓN AC ===")

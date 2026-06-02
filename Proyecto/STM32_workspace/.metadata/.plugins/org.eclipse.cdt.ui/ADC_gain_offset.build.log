@@ -1,17 +1,10 @@
-07:56:41 **** Incremental Build of configuration Debug for project ADC_gain_offset ****
+09:32:20 **** Incremental Build of configuration Debug for project ADC_gain_offset ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L476xx -c -I../Core/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc -I../Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/adc.d" -MT"Core/Src/adc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/adc.o"
-arm-none-eabi-gcc -o "ADC_gain_offset.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\ADC_gain_offset\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC_gain_offset.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: ADC_gain_offset.elf
- 
 arm-none-eabi-size   ADC_gain_offset.elf 
-arm-none-eabi-objdump -h -S  ADC_gain_offset.elf  > "ADC_gain_offset.list"
    text	   data	    bss	    dec	    hex	filename
-  42068	    476	  82428	 124972	  1e82c	ADC_gain_offset.elf
+  42628	    476	  82428	 125532	  1ea5c	ADC_gain_offset.elf
 Finished building: default.size.stdout
  
-Finished building: ADC_gain_offset.list
- 
 
-07:56:42 Build Finished. 0 errors, 0 warnings. (took 1s.206ms)
+09:32:20 Build Finished. 0 errors, 0 warnings. (took 426ms)
 

@@ -32,7 +32,7 @@ Core/Src/callbacks.o: ../Core/Src/callbacks.c ../Core/Inc/tim.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart.h \
  ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal_uart_ex.h \
  ../Core/Inc/adc.h ../Core/Inc/gpio.h ../Core/Inc/usart.h \
- ../Core/Inc/main.h
+ ../Core/Inc/dma.h ../Core/Inc/main.h
 ../Core/Inc/tim.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32L4xx_HAL_Driver/Inc/stm32l4xx_hal.h:
@@ -70,4 +70,5 @@ Core/Src/callbacks.o: ../Core/Src/callbacks.c ../Core/Inc/tim.h \
 ../Core/Inc/adc.h:
 ../Core/Inc/gpio.h:
 ../Core/Inc/usart.h:
+../Core/Inc/dma.h:
 ../Core/Inc/main.h:
