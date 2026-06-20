@@ -1,65 +1,107 @@
-#define NUM_SAMPLES 1000 
+#define NUM_SAMPLES 40000 
+#define LED_BLINK_ms 500
 
-const int adcPin = 1;     // GPIO1 -> ADC1_CH0
-const int triggerPin = 2; // GPIO2 para el trigger del AD 2
+const int adcPin = 1;
+const int ledPin = 47;
 
 volatile uint16_t adcBuffer[NUM_SAMPLES];
-volatile int sampleIndex = 0;
-volatile bool isSampling = false;
-volatile bool samplingDone = false;
+volatile float temp_buffer[2];
+volatile int counter = 0;
+
+volatile bool busy = false;
+volatile bool done = false;
+volatile bool ledState = false;
+volatile bool cal = false;
+volatile bool take_sample = false;
+
+volatile unsigned long curr_Millis = 0;
+volatile unsigned long prev_Millis = 0;
 
 hw_timer_t * timer = NULL;
 
 void IRAM_ATTR onTimer() {
-  if (isSampling) {
-    adcBuffer[sampleIndex] = analogRead(adcPin);
-    sampleIndex++;
-    
-    if (sampleIndex >= NUM_SAMPLES) {
-      isSampling = false;
-      samplingDone = true;
-      timerStop(timer); // Detener el temporizador para no muestrear mas
-    }
+  if (busy) {
+    take_sample = true; 
   }
 }
-
+ 
 void setup() {
   Serial.begin(115200);
-  pinMode(triggerPin, OUTPUT);
-  digitalWrite(triggerPin, LOW);
   analogReadResolution(12);
-  timer = timerBegin(1000000); // timer base a 1MHz 
+  timer = timerBegin(1000000);
   timerAttachInterrupt(timer, &onTimer);
-  timerAlarm(timer, 250, true, 0); //counter de 250 para freq = 4kHz
+  timerAlarm(timer, 250, true, 0); // Freq 4kHz
   
-  // detener timer para activar post recepción uart
   timerStop(timer);
 }
 
 void loop() {
+  if (!busy && !done) {
+    curr_Millis = millis();
+    if (curr_Millis - prev_Millis >= LED_BLINK_ms) {
+      prev_Millis = curr_Millis;
+      ledState = !ledState;
+      if (ledState) neopixelWrite(ledPin, 0, 0, 10);
+      else neopixelWrite(ledPin, 0, 0, 0);
+    }
+  }
+  
   if (Serial.available() > 0) {
     byte command = Serial.read();
 
-    if (command == 0x01 && !isSampling && !samplingDone) {
-      sampleIndex = 0;
+    if (!busy && !done) {
+      counter = 0;
+      take_sample = false;
+      temp_buffer[0] = temperatureRead();
+      neopixelWrite(ledPin, 0, 0, 0);
       
-      // Levantar señal lógica (Trigger WaveForms)
-      digitalWrite(triggerPin, HIGH);
+      switch (command) {
+        case 0x01: analogSetAttenuation(ADC_11db); busy=true; cal=false; break;
+        case 0x02: analogSetAttenuation(ADC_6db); busy=true; cal=false; break;
+        case 0x03: analogSetAttenuation(ADC_2_5db); busy=true; cal=false; break;
+        case 0x04: analogSetAttenuation(ADC_0db); busy=true; cal=false; break;
+        case 0x05: analogSetAttenuation(ADC_11db); busy=true; cal=true; break;
+        case 0x06: analogSetAttenuation(ADC_6db); busy=true; cal=true; break;
+        case 0x07: analogSetAttenuation(ADC_2_5db); busy=true; cal=true; break;
+        case 0x08: analogSetAttenuation(ADC_0db); busy=true; cal=true; break;
+      }
       
-      // Iniciar el muestreo exacto a 4 kHz
-      isSampling = true;
-      timerRestart(timer); // Reinicia la cuenta desde cero y arranca el timer
+      if(busy) {
+        timerRestart(timer);
+        timerStart(timer);
+      }
     }
   }
 
-  if (samplingDone) {
-    digitalWrite(triggerPin, LOW);
+  // Lectura segura fuera de la interrupción
+  if (busy && take_sample) {
+    take_sample = false;
+    
+    if (!cal) {
+      adcBuffer[counter] = analogRead(adcPin);
+    } else {
+      adcBuffer[counter] = analogReadMilliVolts(adcPin);
+    }
+    
+    counter++;
+    
+    if (counter >= NUM_SAMPLES) {
+      busy = false;
+      done = true;
+      timerStop(timer);
+    }
+  }
 
-    // Enviar las 1000 mediciones
+  if (done) {
+    temp_buffer[1] = temperatureRead();
+    
+    Serial.println(temp_buffer[0]);
+    Serial.println(temp_buffer[1]);
+    
     for (int i = 0; i < NUM_SAMPLES; i++) {
       Serial.println(adcBuffer[i]);
     }
 
-    samplingDone = false;
+    done = false;
   }
 }

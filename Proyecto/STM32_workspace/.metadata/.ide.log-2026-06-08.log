@@ -1,0 +1,1445 @@
+2026-06-08 21:48:52,881 [INFO] Activator:176 - 
+
+
+2026-06-08 21:48:52,885 [INFO] Activator:177 - !SESSION log4j initialized
+2026-06-08 21:48:57,431 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-06-08 21:48:58,549 [INFO] ApplicationProperties:184 - Using Application install path: /opt/st/stm32cubeide_1.13.2_2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412
+2026-06-08 21:48:58,563 [INFO] DbMcusXml:78 - Set database path to: /opt/st/stm32cubeide_1.13.2_2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db//mcu/
+2026-06-08 21:48:58,563 [INFO] ApiDb:274 - Set plugin database path to: /opt/st/stm32cubeide_1.13.2_2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db//plugins/boardmanager/
+2026-06-08 21:48:58,563 [WARN] ApiDb:259 - Overriding images path with different value:  => /opt/st/stm32cubeide_1.13.2_2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db//plugins/mcufinder/images/
+2026-06-08 21:48:58,570 [INFO] ApiDb:250 - Set database path to: /home/papijou/.stmcufinder/plugins/mcufinder//mcu/
+2026-06-08 21:48:58,570 [INFO] DbMcusAds:125 - Set database path to: /home/papijou/.stmcufinder/plugins/mcufinder//mcu/
+2026-06-08 21:48:58,572 [INFO] CrossReferenceDbSqlite:203 - Set database path to: /home/papijou/.stmcufinder/plugins/mcufinder//mcu/cs/
+2026-06-08 21:48:58,682 [INFO] RulesReader:64 - Compatibility file has been processed (293 Rules)
+2026-06-08 21:48:58,742 [INFO] DbMcusXml:78 - Set database path to: /opt/st/stm32cubeide_1.13.2_2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db//mcu/
+2026-06-08 21:48:58,742 [INFO] ApiDb:274 - Set plugin database path to: /opt/st/stm32cubeide_1.13.2_2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db//plugins/boardmanager/
+2026-06-08 21:48:58,742 [INFO] ApiDb:261 - Set plugin images path to: /opt/st/stm32cubeide_1.13.2_2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db//plugins/mcufinder/images/
+2026-06-08 21:48:58,742 [WARN] DbFile:41 - Overriding database path with different value: /home/papijou/.stmcufinder/plugins/mcufinder/ => /home/papijou/.stmcufinder/plugins/mcufinder
+2026-06-08 21:48:58,743 [INFO] ApiDb:250 - Set database path to: /home/papijou/.stmcufinder/plugins/mcufinder//mcu/
+2026-06-08 21:48:58,743 [WARN] DbFile:41 - Overriding database path with different value: /home/papijou/.stmcufinder/plugins/mcufinder/ => /home/papijou/.stmcufinder/plugins/mcufinder
+2026-06-08 21:48:58,743 [INFO] DbMcusAds:125 - Set database path to: /home/papijou/.stmcufinder/plugins/mcufinder//mcu/
+2026-06-08 21:48:58,743 [WARN] DbFile:41 - Overriding database path with different value: /home/papijou/.stmcufinder/plugins/mcufinder/ => /home/papijou/.stmcufinder/plugins/mcufinder
+2026-06-08 21:48:58,743 [WARN] DbFile:41 - Overriding database path with different value: /home/papijou/.stmcufinder/plugins/mcufinder/ => /home/papijou/.stmcufinder/plugins/mcufinder
+2026-06-08 21:48:58,743 [INFO] CrossReferenceDbSqlite:203 - Set database path to: /home/papijou/.stmcufinder/plugins/mcufinder//mcu/cs/
+2026-06-08 21:48:58,807 [INFO] MainPanel:262 - HeapMemory: 268435456
+2026-06-08 21:48:58,880 [INFO] DbMcusXml:78 - Set database path to: /opt/st/stm32cubeide_1.13.2_2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db//mcu/
+2026-06-08 21:48:58,880 [INFO] ApiDb:274 - Set plugin database path to: /opt/st/stm32cubeide_1.13.2_2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db//plugins/boardmanager/
+2026-06-08 21:48:58,880 [INFO] ApiDb:261 - Set plugin images path to: /opt/st/stm32cubeide_1.13.2_2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db//plugins/mcufinder/images/
+2026-06-08 21:48:58,880 [WARN] DbFile:41 - Overriding database path with different value: /home/papijou/.stmcufinder/plugins/mcufinder/ => /home/papijou/.stmcufinder/plugins/mcufinder
+2026-06-08 21:48:58,880 [INFO] ApiDb:250 - Set database path to: /home/papijou/.stmcufinder/plugins/mcufinder//mcu/
+2026-06-08 21:48:58,880 [WARN] DbFile:41 - Overriding database path with different value: /home/papijou/.stmcufinder/plugins/mcufinder/ => /home/papijou/.stmcufinder/plugins/mcufinder
+2026-06-08 21:48:58,881 [INFO] DbMcusAds:125 - Set database path to: /home/papijou/.stmcufinder/plugins/mcufinder//mcu/
+2026-06-08 21:48:58,881 [WARN] DbFile:41 - Overriding database path with different value: /home/papijou/.stmcufinder/plugins/mcufinder/ => /home/papijou/.stmcufinder/plugins/mcufinder
+2026-06-08 21:48:58,881 [WARN] DbFile:41 - Overriding database path with different value: /home/papijou/.stmcufinder/plugins/mcufinder/ => /home/papijou/.stmcufinder/plugins/mcufinder
+2026-06-08 21:48:58,881 [INFO] CrossReferenceDbSqlite:203 - Set database path to: /home/papijou/.stmcufinder/plugins/mcufinder//mcu/cs/
+2026-06-08 21:48:58,895 [INFO] ApplicationProperties:184 - Using Application install path: /opt/st/stm32cubeide_1.13.2_2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412
+2026-06-08 21:48:58,896 [INFO] PluginManage:196 - Search for loadable plugins [exclusion list=, ]
+2026-06-08 21:48:58,897 [INFO] PluginManage:310 - Check plugin analytics
+2026-06-08 21:48:59,007 [INFO] AnalyticsPlugin:253 - Accepted Software Licenses: 
+2026-06-08 21:48:59,008 [INFO] AnalyticsPlugin:255 - Accepted CMSIS Pack Licenses: 
+2026-06-08 21:48:59,008 [INFO] AnalyticsPlugin:257 - Accepted Firmware Licenses: FW.L4.1.18.0
+2026-06-08 21:48:59,009 [INFO] PluginManage:359 - Loaded plugin analytics (category:tool,tabindex:-1)
+2026-06-08 21:48:59,009 [INFO] PluginManage:310 - Check plugin cadmodel
+2026-06-08 21:48:59,070 [INFO] CADModel:105 - Init CAD model plugin
+2026-06-08 21:48:59,070 [INFO] PluginManage:359 - Loaded plugin cadmodel (category:power,tabindex:5)
+2026-06-08 21:48:59,070 [INFO] PluginManage:310 - Check plugin clock
+2026-06-08 21:48:59,077 [INFO] PluginManage:359 - Loaded plugin clock (category:base,tabindex:2)
+2026-06-08 21:48:59,077 [INFO] PluginManage:310 - Check plugin ddr
+2026-06-08 21:48:59,078 [INFO] PluginManage:359 - Loaded plugin ddr (category:tool,tabindex:6)
+2026-06-08 21:48:59,078 [INFO] PluginManage:310 - Check plugin filemanager
+2026-06-08 21:48:59,152 [INFO] PluginManage:359 - Loaded plugin filemanager (category:base,tabindex:10)
+2026-06-08 21:48:59,152 [INFO] PluginManage:310 - Check plugin ipmanager
+2026-06-08 21:48:59,156 [INFO] PluginManage:359 - Loaded plugin ipmanager (category:base,tabindex:5)
+2026-06-08 21:48:59,156 [INFO] PluginManage:310 - Check plugin lpbam
+2026-06-08 21:48:59,161 [INFO] PluginManage:359 - Loaded plugin lpbam (category:base,tabindex:0)
+2026-06-08 21:48:59,161 [INFO] PluginManage:310 - Check plugin memorymap
+2026-06-08 21:48:59,167 [INFO] PluginManage:359 - Loaded plugin memorymap (category:base,tabindex:4)
+2026-06-08 21:48:59,167 [INFO] PluginManage:310 - Check plugin pinoutandconfiguration
+2026-06-08 21:48:59,171 [INFO] PluginManage:359 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2026-06-08 21:48:59,171 [INFO] PluginManage:310 - Check plugin pinoutconfig
+2026-06-08 21:48:59,214 [WARN] SupportedApi:132 - Cannot load RTOS API schema: s4s-elt-must-match.1: The content of 'definitions' must match (annotation?, (simpleType | complexType)?, (unique | key | keyref)*)). A problem was found starting at: attribute.
+2026-06-08 21:48:59,298 [INFO] PluginManage:359 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2026-06-08 21:48:59,298 [INFO] PluginManage:310 - Check plugin power
+2026-06-08 21:48:59,306 [INFO] PluginManage:359 - Loaded plugin power (category:power,tabindex:4)
+2026-06-08 21:48:59,306 [INFO] PluginManage:310 - Check plugin projectmanager
+2026-06-08 21:48:59,319 [INFO] PluginManage:359 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2026-06-08 21:48:59,319 [INFO] PluginManage:310 - Check plugin thirdparty
+2026-06-08 21:48:59,411 [INFO] PluginManage:359 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2026-06-08 21:48:59,411 [WARN] IntegrityCheckThread:84 - waiting for thirdparty lock release [integrity check]
+2026-06-08 21:48:59,412 [INFO] PluginManage:310 - Check plugin tools
+2026-06-08 21:48:59,412 [INFO] IntegrityCheckThread:86 - entering critical section [integrity check]
+2026-06-08 21:48:59,412 [INFO] ThirdPartyUpdaterWithRetryManager:70 - Updater plugin not ready yet. [1/15]
+2026-06-08 21:48:59,413 [INFO] PluginManage:359 - Loaded plugin tools (category:base,tabindex:7)
+2026-06-08 21:48:59,413 [INFO] PluginManage:310 - Check plugin tutovideos
+2026-06-08 21:48:59,513 [INFO] PluginManage:359 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2026-06-08 21:48:59,513 [INFO] PluginManage:310 - Check plugin updater
+2026-06-08 21:48:59,521 [INFO] PluginManage:359 - Loaded plugin updater (category:base,tabindex:12)
+2026-06-08 21:48:59,521 [INFO] PluginManage:310 - Check plugin userauth
+2026-06-08 21:48:59,524 [INFO] UserAuth:113 - Init User Auth plugin
+2026-06-08 21:48:59,525 [INFO] PluginManage:359 - Loaded plugin userauth (category:base,tabindex:14)
+2026-06-08 21:48:59,525 [INFO] PluginManage:283 - PluginManage : Loaded plugins [17]
+2026-06-08 21:48:59,634 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2026-06-08 21:48:59,689 [INFO] CADModel:165 - CPN selected for project level
+2026-06-08 21:48:59,689 [INFO] CADModel:114 - Register for checkConnection events
+2026-06-08 21:48:59,699 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,699 [INFO] PluginManager:220 - loadIPPluginJar : add can
+2026-06-08 21:48:59,704 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,704 [INFO] PluginManager:220 - loadIPPluginJar : add gic
+2026-06-08 21:48:59,706 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,706 [INFO] PluginManager:220 - loadIPPluginJar : add quadspi
+2026-06-08 21:48:59,708 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,708 [INFO] PluginManager:220 - loadIPPluginJar : add sai
+2026-06-08 21:48:59,708 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,709 [INFO] PluginManager:220 - loadIPPluginJar : add comp
+2026-06-08 21:48:59,712 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,712 [INFO] PluginManager:220 - loadIPPluginJar : add fmc
+2026-06-08 21:48:59,713 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,713 [INFO] PluginManager:220 - loadIPPluginJar : add spi
+2026-06-08 21:48:59,714 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,715 [INFO] PluginManager:220 - loadIPPluginJar : add nvic
+2026-06-08 21:48:59,716 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,716 [INFO] PluginManager:220 - loadIPPluginJar : add usbx
+2026-06-08 21:48:59,717 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,717 [INFO] PluginManager:220 - loadIPPluginJar : add ucpd
+2026-06-08 21:48:59,718 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,718 [INFO] PluginManager:220 - loadIPPluginJar : add lorawan
+2026-06-08 21:48:59,719 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,719 [INFO] PluginManager:220 - loadIPPluginJar : add hash
+2026-06-08 21:48:59,719 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,719 [INFO] PluginManager:220 - loadIPPluginJar : add ltdc
+2026-06-08 21:48:59,720 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,720 [INFO] PluginManager:220 - loadIPPluginJar : add tim
+2026-06-08 21:48:59,722 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,722 [INFO] PluginManager:220 - loadIPPluginJar : add usart
+2026-06-08 21:48:59,726 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,728 [INFO] PluginManager:220 - loadIPPluginJar : add plateformsettings
+2026-06-08 21:48:59,729 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,730 [INFO] PluginManager:220 - loadIPPluginJar : add aes
+2026-06-08 21:48:59,731 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,732 [INFO] PluginManager:220 - loadIPPluginJar : add opamp
+2026-06-08 21:48:59,733 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,733 [INFO] PluginManager:220 - loadIPPluginJar : add dma3
+2026-06-08 21:48:59,739 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,739 [INFO] PluginManager:220 - loadIPPluginJar : add linkedlist
+2026-06-08 21:48:59,741 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,741 [INFO] PluginManager:220 - loadIPPluginJar : add i3c
+2026-06-08 21:48:59,745 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,745 [INFO] PluginManager:220 - loadIPPluginJar : add mdma
+2026-06-08 21:48:59,747 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,747 [INFO] PluginManager:220 - loadIPPluginJar : add i2c
+2026-06-08 21:48:59,749 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,749 [INFO] PluginManager:220 - loadIPPluginJar : add ipddr
+2026-06-08 21:48:59,750 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,751 [INFO] PluginManager:220 - loadIPPluginJar : add fatfs
+2026-06-08 21:48:59,752 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,752 [INFO] PluginManager:220 - loadIPPluginJar : add gfxmmu
+2026-06-08 21:48:59,753 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,753 [INFO] PluginManager:220 - loadIPPluginJar : add tsc
+2026-06-08 21:48:59,756 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,757 [INFO] PluginManager:220 - loadIPPluginJar : add stm32_wpan
+2026-06-08 21:48:59,758 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,758 [INFO] PluginManager:220 - loadIPPluginJar : add genericplugin
+2026-06-08 21:48:59,759 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,759 [INFO] PluginManager:220 - loadIPPluginJar : add i2s
+2026-06-08 21:48:59,763 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,763 [INFO] PluginManager:220 - loadIPPluginJar : add adc
+2026-06-08 21:48:59,766 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,766 [INFO] PluginManager:220 - loadIPPluginJar : add freertos
+2026-06-08 21:48:59,769 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,769 [INFO] PluginManager:220 - loadIPPluginJar : add dma
+2026-06-08 21:48:59,771 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,771 [INFO] PluginManager:220 - loadIPPluginJar : add cryp
+2026-06-08 21:48:59,772 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,772 [INFO] PluginManager:220 - loadIPPluginJar : add touchsensing
+2026-06-08 21:48:59,774 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,774 [INFO] PluginManager:220 - loadIPPluginJar : add gpio
+2026-06-08 21:48:59,776 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,776 [INFO] PluginManager:220 - loadIPPluginJar : add openamp
+2026-06-08 21:48:59,777 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,777 [INFO] PluginManager:220 - loadIPPluginJar : add gtzc
+2026-06-08 21:48:59,778 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,778 [INFO] PluginManager:220 - loadIPPluginJar : add tracer_emb
+2026-06-08 21:48:59,779 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,779 [INFO] PluginManager:220 - loadIPPluginJar : add dfsdm
+2026-06-08 21:48:59,779 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,779 [INFO] PluginManager:220 - loadIPPluginJar : add ts
+2026-06-08 21:48:59,781 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,781 [INFO] PluginManager:220 - loadIPPluginJar : add resmgrutility
+2026-06-08 21:48:59,782 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:48:59,782 [INFO] PluginManager:220 - loadIPPluginJar : add pdm2pcm
+2026-06-08 21:48:59,868 [INFO] CADModel:165 - CPN selected for project level
+2026-06-08 21:48:59,868 [INFO] CADModel:114 - Register for checkConnection events
+2026-06-08 21:48:59,868 [FATAL] Updater:308 - Updater called before beeing initialized
+2026-06-08 21:48:59,868 [ERROR] CADModel:125 - Updater not yet initialized, retry later 
+2026-06-08 21:48:59,951 [INFO] CADModel:165 - CPN selected for project level
+2026-06-08 21:48:59,951 [INFO] CADModel:114 - Register for checkConnection events
+2026-06-08 21:48:59,951 [FATAL] Updater:308 - Updater called before beeing initialized
+2026-06-08 21:48:59,951 [ERROR] CADModel:125 - Updater not yet initialized, retry later 
+2026-06-08 21:48:59,954 [FATAL] Updater:308 - Updater called before beeing initialized
+2026-06-08 21:49:00,003 [FATAL] Updater:308 - Updater called before beeing initialized
+2026-06-08 21:49:00,008 [INFO] DbMcusAds:53 - JSON generation date=Thu May 28 12:08:16 CLT 2026 (1779984496303)
+2026-06-08 21:49:00,009 [FATAL] Updater:308 - Updater called before beeing initialized
+2026-06-08 21:49:00,035 [WARN] DetailPanel:346 - Failed to get advertising image, set to default
+2026-06-08 21:49:00,113 [FATAL] Updater:308 - Updater called before beeing initialized
+2026-06-08 21:49:00,115 [FATAL] Updater:308 - Updater called before beeing initialized
+2026-06-08 21:49:00,116 [FATAL] Updater:308 - Updater called before beeing initialized
+2026-06-08 21:49:00,116 [WARN] DetailPanel:346 - Failed to get advertising image, set to default
+2026-06-08 21:49:00,117 [FATAL] Updater:308 - Updater called before beeing initialized
+2026-06-08 21:49:00,137 [ERROR] Updater:1120 - MainUpdater not yet initialized. External WinMGr cannot be set.
+2026-06-08 21:49:00,138 [INFO] Updater:1056 - Updater Version found : 6.9.2
+2026-06-08 21:49:00,152 [INFO] ApplicationProperties:184 - Using Application install path: /opt/st/stm32cubeide_1.13.2_2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412
+2026-06-08 21:49:00,278 [INFO] MainUpdater:2868 - connection check result : 10
+2026-06-08 21:49:00,278 [INFO] MainUpdater:285 - Updater Check For Update Now.
+2026-06-08 21:49:00,279 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.92
+2026-06-08 21:49:00,282 [INFO] McuFinderGlobals:63 - Set McuFinder mode to 2 (CubeIDE integrated)
+2026-06-08 21:49:00,282 [INFO] UserAuth:179 - activating auth plugin
+2026-06-08 21:49:00,284 [INFO] UserAuth:393 - Internet connection configuration mode: 1
+2026-06-08 21:49:00,296 [INFO] JxBrowserEngine:151 - Initiate JxBrowser Engine with user profile folder
+2026-06-08 21:49:00,431 [INFO] CheckServerUpdateThread:120 - End of CheckServer Thread
+2026-06-08 21:49:00,821 [INFO] WebApp:157 - Instantiating new browser for Auth
+2026-06-08 21:49:01,134 [INFO] WebApp:753 - Register for checkConnection events
+2026-06-08 21:49:01,134 [INFO] WebApp:390 - Apply proxy settings
+2026-06-08 21:49:01,134 [INFO] WebApp:475 - Chromium requires no authentication
+2026-06-08 21:49:01,137 [INFO] WebApp:418 - Direct internet connection detected
+2026-06-08 21:49:01,195 [INFO] WebApp:188 - Starting web application
+2026-06-08 21:49:01,195 [INFO] WebApp:520 - Web application path used /opt/st/stm32cubeide_1.13.2_2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412/db/plugins/mcufinder/reactClient1/index.html
+2026-06-08 21:49:01,535 [INFO] McuFinderGlobals:63 - Set McuFinder mode to 2 (CubeIDE integrated)
+2026-06-08 21:49:01,537 [INFO] MainUpdater:2868 - connection check result : 10
+2026-06-08 21:49:01,538 [INFO] MainUpdater:2868 - connection check result : 10
+2026-06-08 21:49:01,551 [INFO] MicroXplorer:468 - Change Database Path : 
+2026-06-08 21:49:01,551 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.92
+2026-06-08 21:49:01,553 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2026-06-08 21:49:02,461 [WARN] PackLoader:240 - Cannot read IP mode file for STMicroelectronics.FP-ATR-SIGFOX1.3.2.0
+2026-06-08 21:49:02,463 [INFO] ThirdParty:978 - Integrity check success = true
+2026-06-08 21:49:02,463 [INFO] IntegrityCheckThread:100 - exiting critical section [integrity check]
+2026-06-08 21:49:02,463 [INFO] IntegrityCheckThread:103 - End integrity checks thread
+2026-06-08 21:49:02,463 [INFO] ThirdParty:873 - entering critical section [close project]
+2026-06-08 21:49:02,463 [INFO] ThirdParty:883 - exiting critical section [close project]
+2026-06-08 21:49:02,465 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2026-06-08 21:49:02,468 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 209971328 Bytes (268435456)
+2026-06-08 21:49:02,469 [INFO] MicroXplorer:468 - Change Database Path : 
+2026-06-08 21:49:02,469 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.92
+2026-06-08 21:49:02,469 [INFO] OpenFileManager:308 - Change cursor
+2026-06-08 21:49:02,485 [INFO] Mcu:1946 - Initializing MCU STM32L476R(C-E-G)Tx STM32L476RGTx STM32L476RGT6
+2026-06-08 21:49:03,618 [INFO] Context:659 - Trying to add GPIOservice into a context  which must be forbidden
+2026-06-08 21:49:04,070 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2026-06-08 21:49:04,070 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2026-06-08 21:49:04,071 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2026-06-08 21:49:04,071 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2026-06-08 21:49:04,071 [WARN] ModelIntegratedComponent:184 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2026-06-08 21:49:04,071 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,071 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,071 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,072 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,073 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,073 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,073 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,073 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,073 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,073 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,073 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,073 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,073 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 21:49:04,079 [INFO] ThirdPartyModel:298 - Start build external matchings
+2026-06-08 21:49:04,081 [INFO] ThirdPartyModel:316 - End build external matchings
+2026-06-08 21:49:04,088 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (CommonPathInternal) has invalid value (null|ADC_CHANNEL_TEMPSENSOR|null|null)
+2026-06-08 21:49:04,088 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (ADC2) : Parameter (CommonPathInternal) has invalid value (null|null|null|null)
+2026-06-08 21:49:04,088 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (ADC2) currently not set
+2026-06-08 21:49:04,089 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Request) has Id (ADC2) currently not set
+2026-06-08 21:49:04,089 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (ADC2) currently not set
+2026-06-08 21:49:04,089 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (ADC2) currently not set
+2026-06-08 21:49:04,089 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (ADC2) currently not set
+2026-06-08 21:49:04,089 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (ADC2) currently not set
+2026-06-08 21:49:04,089 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (ADC2) currently not set
+2026-06-08 21:49:04,089 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (ADC2) currently not set
+2026-06-08 21:49:04,090 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (ADC2) currently not set
+2026-06-08 21:49:04,313 [INFO] UtilMem:75 - End LoadConfig() Used Memory: 195702280 Bytes (349175808)
+2026-06-08 21:49:04,372 [INFO] ApiDb:581 - Connected to CubeFinder SQLite database (/home/papijou/.stmcufinder/plugins/mcufinder/mcu/cube-finder-db.db)
+2026-06-08 21:49:04,442 [INFO] ApiDb:668 - CubeFinder database Data Model version=2.1
+2026-06-08 21:49:04,442 [INFO] ApiDb:669 - CubeFinder database Configuration version=3.0.42
+2026-06-08 21:49:04,442 [INFO] ApiDb:670 - CubeFinder database generation date=2026-05-14 (1778746352)
+2026-06-08 21:49:04,442 [INFO] ApiDb:671 - CubeFinder database FW Pack versions=[FP-ATR-ASTRA1_V2.0.0, FP-SNS-FLIGHT1_V5.1.0, FP-SNS-MOTENV1_V5.1.0, FP-SNS-MOTENVWB1_V1.5.0, FP-SNS-SMARTAG2_V1.2.0, FP-SNS-STBOX1_V2.1.0, STM32Cube_FW_C0_V1.4.0, STM32Cube_FW_F4_V1.28.3, STM32Cube_FW_F7_V1.17.4, STM32Cube_FW_G0_V1.6.3, STM32Cube_FW_G4_V1.6.2, STM32Cube_FW_H5_V1.6.0, STM32Cube_FW_H7RS_V1.3.0, STM32Cube_FW_H7_V1.13.0, STM32Cube_FW_L0_V1.12.2, STM32Cube_FW_L4_V1.18.2, STM32Cube_FW_L5_V1.6.0, STM32Cube_FW_N6_V1.3.0, STM32Cube_FW_U0_V1.3.0, STM32Cube_FW_U3_V1.3.0, STM32Cube_FW_U5_V1.8.0, STM32Cube_FW_WB0_V1.4.0, STM32Cube_FW_WBA_V1.9.0, STM32Cube_FW_WB_V1.24.0, STM32Cube_FW_WL3_V1.4.0, STM32Cube_FW_WL_V1.5.0, X-CUBE-ALGOBUILD_V1.4.0, X-CUBE-ALS_V1.0.2, X-CUBE-AZRTOS-F4_V1.1.0, X-CUBE-AZRTOS-F7_V1.1.0, X-CUBE-AZRTOS-G0_V1.1.0, X-CUBE-AZRTOS-G4_V2.0.0, X-CUBE-AZRTOS-H7RS_V1.1.0, X-CUBE-AZRTOS-H7_V3.5.0, X-CUBE-AZRTOS-L4_V2.0.0, X-CUBE-AZRTOS-L5_V2.0.0, X-CUBE-AZRTOS-WB_V2.0.0, X-CUBE-AZRTOS-WL_V2.0.0, X-CUBE-BLE1_V7.1.0, X-CUBE-BLE2_V3.3.0, X-CUBE-BLEMGR_V4.1.0, X-CUBE-EEPRMA1_V5.2.0, X-CUBE-FREERTOS_V1.5.0, X-CUBE-GNSS1_V7.1.1, X-CUBE-MEMS1_V12.1.0, X-CUBE-NFC4_V3.0.0, X-CUBE-NFC7_V2.0.0, X-CUBE-SFXS2LP1_V4.0.0, X-CUBE-ST67W61_V1.3.0, X-CUBE-SUBG2_V5.0.0, X-CUBE-TOF1_V3.4.3]
+2026-06-08 21:49:06,090 [INFO] ApiDb:240 - Found 323 in-development CPN: [B-G473E-ZEST1S, B-WB1M-WPAN1, B-WL5M-SUBG1, NUCLEO-C031C6, NUCLEO-H503RB, NUCLEO-H563ZI, NUCLEO-U545RE-Q, NUCLEO-U5A5ZJ-Q, NUCLEO-WBA52CG, STEVAL-PROTEUS1, STEVAL-SMARTAG2, STEVAL-STWINBX1, STM320518-EVAL, STM32C0116-DK, STM32C011D6Y3TR, STM32C011D6Y6TR, STM32C011F4P3, STM32C011F4P6, STM32C011F4U3, STM32C011F4U6TR, STM32C011F6P3, STM32C011F6P6, STM32C011F6U3, STM32C011F6U6TR, STM32C011J4M3, STM32C011J4M6, STM32C011J6M3, STM32C011J6M6, STM32C0316-DK, STM32C031C4T3, STM32C031C4T6, STM32C031C4U3, STM32C031C4U6, STM32C031C6T3, STM32C031C6T6, STM32C031C6U3, STM32C031C6U6, STM32C031F4P3, STM32C031F4P6, STM32C031F6P3, STM32C031F6P6, STM32C031G4U3, STM32C031G4U6, STM32C031G6U3, STM32C031G6U6, STM32C031K4T3, STM32C031K4T6, STM32C031K4U3, STM32C031K4U6, STM32C031K6T3, STM32C031K6T6, STM32C031K6U3, STM32C031K6U6, STM32G071K8TXN, STM32G071K8UXN, STM32G081GBU6N, STM32G081KBT6N, STM32G081KBUXN, STM32G0B1CCT6N, STM32G0B1KCT6, STM32G0B1NEY6TR, STM32G0B1RCT6N, STM32G0C1CCT6, STM32G0C1CCT6N, STM32G0C1CCU6N, STM32G0C1CET6N, STM32G0C1CEU6N, STM32G0C1KCT6, STM32G0C1NEY6TR, STM32G0C1RCI6N, STM32G0C1RCT6N, STM32G0C1REI6N, STM32G0C1RET6N, STM32G0C1VCI6, STM32G0C1VEI6, STM32G471CCT6, STM32G471CCU6, STM32G471CET3, STM32G471CET6, STM32G471CEU3, STM32G471CEU6, STM32G471MCT6, STM32G471MET3, STM32G471MET6, STM32G471MEY6TR, STM32G471QCT6, STM32G471QET3, STM32G471RCT6, STM32G471RET3, STM32G471RET6, STM32G471VCH6, STM32G471VCI6, STM32G471VCT6, STM32G471VEH3, STM32G471VEH6, STM32G471VEI3, STM32G471VEI6, STM32G471VET3, STM32G471VET6, STM32G474CCT6, STM32H503CBT6, STM32H503CBU6, STM32H503EBY6TR, STM32H503KBU6, STM32H503RBT6, STM32H562AGI6, STM32H562AII6, STM32H562IGK6, STM32H562IGT6, STM32H562IIK6, STM32H562IIT6, STM32H562RGT6, STM32H562RGV6, STM32H562RIT6, STM32H562RIV6, STM32H562VGT6, STM32H562VIT6, STM32H562ZGT6, STM32H562ZIT6, STM32H563AGI6, STM32H563AII3Q, STM32H563AII6, STM32H563IGK6, STM32H563IGT6, STM32H563IIK3Q, STM32H563IIK6, STM32H563IIT3Q, STM32H563IIT6, STM32H563MIY3QTR, STM32H563RGT6, STM32H563RGV6, STM32H563RIT6, STM32H563RIV6, STM32H563VGT6, STM32H563VIT3Q, STM32H563VIT6, STM32H563ZGT6, STM32H563ZIT3Q, STM32H563ZIT6, STM32H573AII3Q, STM32H573AII6, STM32H573I-DK, STM32H573IIK3Q, STM32H573IIK6, STM32H573IIT3Q, STM32H573IIT6, STM32H573MIY3QTR, STM32H573RIT6, STM32H573RIV6, STM32H573VIT3Q, STM32H573VIT6, STM32H573ZIT3Q, STM32H573ZIT6, STM32L4R5QGI6STR, STM32MP131AAE3, STM32MP131AAF3, STM32MP131AAG3, STM32MP131CAE3, STM32MP131CAF3, STM32MP131CAG3, STM32MP131DAE7, STM32MP131DAF7, STM32MP131DAG7, STM32MP131FAE7, STM32MP131FAF7, STM32MP131FAG7, STM32MP133AAE3, STM32MP133AAF3, STM32MP133AAG3, STM32MP133CAE3, STM32MP133CAF3, STM32MP133CAG3, STM32MP133DAE7, STM32MP133DAF7, STM32MP133DAG7, STM32MP133FAE7, STM32MP133FAF7, STM32MP133FAG7, STM32MP135AAE3, STM32MP135AAF3, STM32MP135AAG3, STM32MP135CAE3, STM32MP135CAF3, STM32MP135CAG3, STM32MP135DAE7, STM32MP135DAF7, STM32MP135DAG7, STM32MP135F-DK, STM32MP135FAE7, STM32MP135FAF7, STM32MP135FAF7T, STM32MP135FAF7U, STM32MP135FAG7, STM32U535CBT6, STM32U535CBT6Q, STM32U535CBU6, STM32U535CBU6Q, STM32U535CCT6, STM32U535CCT6Q, STM32U535CCU6, STM32U535CCU6Q, STM32U535CET6, STM32U535CET6Q, STM32U535CEU6, STM32U535CEU6Q, STM32U535JEY6QTR, STM32U535NCY6QTR, STM32U535NEY6QTR, STM32U535RBI6, STM32U535RBI6Q, STM32U535RBT6, STM32U535RBT6Q, STM32U535RCI6, STM32U535RCI6Q, STM32U535RCT6, STM32U535RCT6Q, STM32U535REI6, STM32U535REI6Q, STM32U535RET6, STM32U535RET6Q, STM32U535VCI6, STM32U535VCI6Q, STM32U535VCT6, STM32U535VCT6Q, STM32U535VEI6, STM32U535VEI6Q, STM32U535VET6, STM32U535VET6Q, STM32U545CET6, STM32U545CET6Q, STM32U545CEU6, STM32U545CEU6Q, STM32U545JEY6QTR, STM32U545NEY6QTR, STM32U545REI6, STM32U545REI6Q, STM32U545RET6, STM32U545RET6Q, STM32U545VEI6, STM32U545VEI6Q, STM32U545VET6, STM32U545VET6Q, STM32U595AIH6, STM32U595AIH6Q, STM32U595AJH6, STM32U595AJH6Q, STM32U595QII6, STM32U595QII6Q, STM32U595QJI6, STM32U595QJI6Q, STM32U595RIT6, STM32U595RIT6Q, STM32U595RJT6, STM32U595RJT6Q, STM32U595VIT6, STM32U595VIT6Q, STM32U595VJT6, STM32U595VJT6Q, STM32U595ZIT6, STM32U595ZIT6Q, STM32U595ZIY6QTR, STM32U595ZJT6, STM32U595ZJT6Q, STM32U595ZJY6QTR, STM32U599BJY6QTR, STM32U599NIH6Q, STM32U599NJH6Q, STM32U599VIT6Q, STM32U599VJT6, STM32U599VJT6Q, STM32U599ZIT6Q, STM32U599ZIY6QTR, STM32U599ZJT6Q, STM32U599ZJY6QTR, STM32U5A5AJH6, STM32U5A5AJH6Q, STM32U5A5QJI6, STM32U5A5QJI6Q, STM32U5A5RJT6, STM32U5A5RJT6Q, STM32U5A5VJT6, STM32U5A5VJT6Q, STM32U5A5ZJT6, STM32U5A5ZJT6Q, STM32U5A5ZJY6QTR, STM32U5A9BJY6QTR, STM32U5A9J-DK, STM32U5A9NJH6Q, STM32U5A9VJT6Q, STM32U5A9ZJT6Q, STM32U5A9ZJY6QTR, STM32U5F7VIT6, STM32U5F7VIT6Q, STM32U5F7VJT6, STM32U5F7VJT6Q, STM32U5F9BJY6QTR, STM32U5F9NJH6Q, STM32U5F9VIT6Q, STM32U5F9VJT6Q, STM32U5F9ZIJ6QTR, STM32U5F9ZIT6Q, STM32U5F9ZJJ6QTR, STM32U5F9ZJT6Q, STM32U5G7VJT6, STM32U5G7VJT6Q, STM32U5G9BJY6QTR, STM32U5G9J-DK1, STM32U5G9J-DK2, STM32U5G9NJH6Q, STM32U5G9VJT6Q, STM32U5G9ZJJ6QTR, STM32U5G9ZJT6Q, STM32WB1MMCH6, STM32WBA52CEU6, STM32WBA52CEU6T, STM32WBA52CGU6, STM32WBA52CGU6T, STM32WBA52KEU6, STM32WBA52KEU6T, STM32WBA52KGU6, STM32WBA52KGU6T, STM32WL5MOCH6, STM32WL5MOCH6TR]
+2026-06-08 21:49:06,093 [INFO] DbMcus:217 - Found 5061 MCUs, 4943 are supported
+2026-06-08 21:49:06,093 [INFO] ApiDb:423 - Load user favorites file /home/papijou/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2026-06-08 21:49:06,094 [INFO] ApiDb:427 - User favorites MCUs=[]
+2026-06-08 21:49:06,094 [INFO] DbMcus:223 - Set 0 / 0 favorites MCUs
+2026-06-08 21:49:06,404 [WARN] ThirdParty:833 - waiting for thirdparty lock release [change project]
+2026-06-08 21:49:06,404 [INFO] ThirdParty:835 - entering critical section [change project]
+2026-06-08 21:49:06,404 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USBPD 4.1
+2026-06-08 21:49:06,404 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2026-06-08 21:49:06,404 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2026-06-08 21:49:06,404 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2026-06-08 21:49:06,404 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2026-06-08 21:49:06,404 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2026-06-08 21:49:06,404 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2026-06-08 21:49:06,404 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2026-06-08 21:49:06,404 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2026-06-08 21:49:06,404 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2026-06-08 21:49:06,405 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2026-06-08 21:49:06,405 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2026-06-08 21:49:06,405 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2026-06-08 21:49:06,405 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2026-06-08 21:49:06,405 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2026-06-08 21:49:06,405 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2026-06-08 21:49:06,405 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2026-06-08 21:49:06,405 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2026-06-08 21:49:06,405 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2026-06-08 21:49:06,405 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2026-06-08 21:49:06,405 [INFO] ThirdParty:841 - exiting critical section [change project]
+2026-06-08 21:49:06,736 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2026-06-08 21:49:06,737 [INFO] PinOutPanel:1499 - setPackage(STM32L476RGTx,LQFP64)
+2026-06-08 21:49:07,123 [INFO] UtilMem:75 - Before build in PCC Used Memory: 252373264 Bytes (360710144)
+2026-06-08 21:49:07,503 [INFO] UtilMem:75 - After build in PCC Used Memory: 300835064 Bytes (360710144)
+2026-06-08 21:49:07,525 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,525 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,525 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,525 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,525 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,525 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,526 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,526 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,526 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,526 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,526 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,526 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,526 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,526 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,526 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,526 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,526 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,527 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,527 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,527 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,527 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,527 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,527 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,527 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,527 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,527 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,527 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,527 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,528 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,528 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,528 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,528 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,528 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,528 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,528 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,528 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,528 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,528 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,528 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,528 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,528 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,528 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,529 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,529 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,529 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,529 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,529 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,529 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,529 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,529 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,529 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,529 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,529 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,529 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,529 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,530 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,530 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,530 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,530 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 21:49:07,643 [INFO] CADModel:165 - CPN selected for project levelSTM32L476RGT6
+2026-06-08 21:49:07,643 [INFO] CADModel:114 - Register for checkConnection events
+2026-06-08 21:49:07,681 [INFO] OpenFileManager:328 - Restore cursor
+2026-06-08 21:49:21,461 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2026-06-08 21:49:21,462 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2026-06-08 21:49:21,462 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2026-06-08 22:07:50,471 [INFO] MainUpdater:2868 - connection check result : 10
+2026-06-08 22:07:50,471 [INFO] MainUpdater:2868 - connection check result : 10
+2026-06-08 22:07:52,197 [INFO] MicroXplorer:468 - Change Database Path : 
+2026-06-08 22:07:52,198 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.92
+2026-06-08 22:07:52,207 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2026-06-08 22:07:52,208 [INFO] ThirdParty:873 - entering critical section [close project]
+2026-06-08 22:07:52,208 [INFO] ThirdParty:883 - exiting critical section [close project]
+2026-06-08 22:07:52,209 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2026-06-08 22:07:52,214 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 681687496 Bytes (846200832)
+2026-06-08 22:07:52,214 [INFO] MicroXplorer:468 - Change Database Path : 
+2026-06-08 22:07:52,214 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.92
+2026-06-08 22:07:52,214 [INFO] OpenFileManager:308 - Change cursor
+2026-06-08 22:07:52,220 [INFO] Mcu:1946 - Initializing MCU STM32L476R(C-E-G)Tx STM32L476RGTx STM32L476RGT6
+2026-06-08 22:07:53,037 [INFO] Context:659 - Trying to add GPIOservice into a context  which must be forbidden
+2026-06-08 22:07:53,396 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2026-06-08 22:07:53,396 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2026-06-08 22:07:53,396 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2026-06-08 22:07:53,396 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2026-06-08 22:07:53,396 [WARN] ModelIntegratedComponent:184 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,397 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:07:53,399 [INFO] ThirdPartyModel:298 - Start build external matchings
+2026-06-08 22:07:53,399 [INFO] ThirdPartyModel:316 - End build external matchings
+2026-06-08 22:07:53,401 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (CommonPathInternal) has invalid value (null|ADC_CHANNEL_TEMPSENSOR|null|null)
+2026-06-08 22:07:53,401 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (ADC2) : Parameter (CommonPathInternal) has invalid value (null|null|null|null)
+2026-06-08 22:07:53,401 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (ADC2) currently not set
+2026-06-08 22:07:53,401 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Request) has Id (ADC2) currently not set
+2026-06-08 22:07:53,401 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (ADC2) currently not set
+2026-06-08 22:07:53,401 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (ADC2) currently not set
+2026-06-08 22:07:53,401 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (ADC2) currently not set
+2026-06-08 22:07:53,402 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (ADC2) currently not set
+2026-06-08 22:07:53,402 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (ADC2) currently not set
+2026-06-08 22:07:53,402 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (ADC2) currently not set
+2026-06-08 22:07:53,402 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (ADC2) currently not set
+2026-06-08 22:07:53,587 [INFO] UtilMem:75 - End LoadConfig() Used Memory: 336796848 Bytes (846200832)
+2026-06-08 22:07:53,594 [WARN] ThirdParty:833 - waiting for thirdparty lock release [change project]
+2026-06-08 22:07:53,594 [INFO] ThirdParty:835 - entering critical section [change project]
+2026-06-08 22:07:53,594 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USBPD 4.1
+2026-06-08 22:07:53,594 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2026-06-08 22:07:53,594 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2026-06-08 22:07:53,594 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2026-06-08 22:07:53,594 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2026-06-08 22:07:53,594 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2026-06-08 22:07:53,594 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2026-06-08 22:07:53,594 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2026-06-08 22:07:53,594 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2026-06-08 22:07:53,594 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2026-06-08 22:07:53,594 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2026-06-08 22:07:53,594 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2026-06-08 22:07:53,595 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2026-06-08 22:07:53,595 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2026-06-08 22:07:53,595 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2026-06-08 22:07:53,595 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2026-06-08 22:07:53,595 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2026-06-08 22:07:53,595 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2026-06-08 22:07:53,595 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2026-06-08 22:07:53,595 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2026-06-08 22:07:53,595 [INFO] ThirdParty:841 - exiting critical section [change project]
+2026-06-08 22:07:53,819 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2026-06-08 22:07:53,819 [INFO] PinOutPanel:1499 - setPackage(STM32L476RGTx,LQFP64)
+2026-06-08 22:07:54,038 [INFO] UtilMem:75 - Before build in PCC Used Memory: 369250680 Bytes (846200832)
+2026-06-08 22:07:54,259 [INFO] UtilMem:75 - After build in PCC Used Memory: 452094344 Bytes (846200832)
+2026-06-08 22:07:54,276 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,276 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,276 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,276 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,276 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,276 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,276 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,276 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,276 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,276 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,277 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,277 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,277 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,277 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,277 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,277 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,277 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,277 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,278 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,278 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,278 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,278 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,278 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,278 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,278 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,278 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,278 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,279 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,279 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,279 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,279 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,279 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,279 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,279 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,279 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,279 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,279 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,280 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,280 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,280 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,280 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,280 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,280 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,280 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,280 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,280 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,280 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,280 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,281 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,281 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,281 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,281 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,281 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,282 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,282 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,282 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,282 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,283 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,283 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:07:54,321 [INFO] CADModel:165 - CPN selected for project levelSTM32L476RGT6
+2026-06-08 22:07:54,321 [INFO] CADModel:114 - Register for checkConnection events
+2026-06-08 22:07:54,358 [INFO] OpenFileManager:328 - Restore cursor
+2026-06-08 22:07:57,612 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,658 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,658 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,658 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,658 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,658 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,659 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,659 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,659 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,659 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,659 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,659 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,659 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,659 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,659 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,659 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,659 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,659 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,659 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,659 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,659 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:07:57,684 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:01,577 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,456x165,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-06-08 22:08:03,543 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:03,543 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:03,543 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:03,543 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:03,543 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:03,543 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:03,543 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:03,544 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:03,544 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:03,544 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:03,544 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:03,544 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:03,544 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:03,544 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:03,544 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:03,544 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:03,544 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:03,544 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:03,544 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:03,544 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:03,565 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,212 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,212 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,212 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,212 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,212 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,212 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,212 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,212 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,213 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,213 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,213 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,213 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,213 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,213 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,213 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,213 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,213 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,213 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,213 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,213 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,218 [INFO] ParamManager:896 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2026-06-08 22:08:09,222 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,232 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,232 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,232 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,232 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,232 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,232 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,232 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,232 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,232 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,232 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,232 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,232 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,233 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,233 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,233 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,233 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,233 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,233 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,233 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,233 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,238 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,906 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,906 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,906 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,906 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,906 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,906 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,906 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,906 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,906 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,907 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,907 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,907 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,907 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,907 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,907 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,907 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,907 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,907 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,907 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,907 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:09,931 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:08:44,743 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-06-08 22:09:01,409 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-06-08 22:09:02,858 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-06-08 22:09:20,378 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-06-08 22:09:22,908 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,909 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,909 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,910 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,910 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,910 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,910 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,910 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,910 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,910 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,910 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,910 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,910 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,910 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,910 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,910 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,910 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,910 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,910 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,910 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,935 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,962 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,963 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,963 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,963 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,963 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,963 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,963 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,963 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,963 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,963 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,963 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,963 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,963 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,963 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,963 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,963 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,963 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,963 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,963 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,964 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:22,988 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,279 [INFO] ParamManager:896 - [Generic UI] PropertyChangeEvent: TAB_STATUS_CHANGED , "dont care", "never mind"
+2026-06-08 22:09:29,294 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-06-08 22:09:29,326 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,331 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,332 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,332 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,332 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,332 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,332 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,332 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,332 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,332 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,332 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,332 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,332 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,332 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,332 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,332 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,332 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,332 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,332 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,332 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:29,353 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:32,951 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 230849864 Bytes (846200832)
+2026-06-08 22:09:33,166 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 270035576 Bytes (846200832)
+2026-06-08 22:09:33,483 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L4
+2026-06-08 22:09:33,483 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L4
+2026-06-08 22:09:33,483 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2026-06-08 22:09:33,483 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2026-06-08 22:09:33,483 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2026-06-08 22:09:33,483 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2026-06-08 22:09:33,483 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2026-06-08 22:09:33,484 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2026-06-08 22:09:33,484 [INFO] CodeGenerator:799 - code generatio: config db path: /opt/st/stm32cubeide_1.13.2_2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2026-06-08 22:09:33,608 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/MXTmpFiles/license.tmp_save
+2026-06-08 22:09:33,830 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/MXTmpFiles/license.tmp
+2026-06-08 22:09:33,895 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/gpio.c_save
+2026-06-08 22:09:33,993 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/gpio.c
+2026-06-08 22:09:33,995 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/gpio.h_save
+2026-06-08 22:09:34,066 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/gpio.h
+2026-06-08 22:09:34,224 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/adc.c_save
+2026-06-08 22:09:34,336 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/adc.c
+2026-06-08 22:09:34,338 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/adc.h_save
+2026-06-08 22:09:34,380 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/adc.h
+2026-06-08 22:09:34,384 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/tim.c_save
+2026-06-08 22:09:34,479 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/tim.c
+2026-06-08 22:09:34,481 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/tim.h_save
+2026-06-08 22:09:34,547 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/tim.h
+2026-06-08 22:09:34,549 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/usart.c_save
+2026-06-08 22:09:34,607 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/usart.c
+2026-06-08 22:09:34,608 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/usart.h_save
+2026-06-08 22:09:34,649 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/usart.h
+2026-06-08 22:09:34,654 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/stm32l4xx_it.c_save
+2026-06-08 22:09:34,711 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/stm32l4xx_it.c
+2026-06-08 22:09:34,713 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/stm32l4xx_it.h_save
+2026-06-08 22:09:34,753 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/stm32l4xx_it.h
+2026-06-08 22:09:34,765 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/stm32l4xx_hal_msp.c_save
+2026-06-08 22:09:34,821 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/stm32l4xx_hal_msp.c
+2026-06-08 22:09:34,823 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/MXTmpFiles/system.tmp_save
+2026-06-08 22:09:34,885 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/MXTmpFiles/system.tmp
+2026-06-08 22:09:34,889 [INFO] CodeEngine:311 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/stm32l4xx_hal_conf.h_save
+2026-06-08 22:09:34,955 [INFO] CodeEngine:335 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/stm32l4xx_hal_conf.h
+2026-06-08 22:09:34,982 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/main.h_save
+2026-06-08 22:09:35,045 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/main.h
+2026-06-08 22:09:35,047 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/main.c_save
+2026-06-08 22:09:35,130 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/main.c
+2026-06-08 22:09:35,475 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 49mS.
+2026-06-08 22:09:35,479 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2026-06-08 22:09:35,597 [INFO] ConfigFileManager:1457 - The Die is : DIE415
+2026-06-08 22:09:35,608 [INFO] ApiDbMcu:507 - Load IP Config File for FATFS
+2026-06-08 22:09:35,611 [INFO] ApiDbMcu:507 - Load IP Config File for FREERTOS
+2026-06-08 22:09:35,617 [INFO] ApiDbMcu:507 - Load IP Config File for TOUCHSENSING
+2026-06-08 22:09:35,620 [INFO] ApiDbMcu:507 - Load IP Config File for USB_DEVICE
+2026-06-08 22:09:35,622 [INFO] ApiDbMcu:507 - Load IP Config File for USB_HOST
+2026-06-08 22:09:36,087 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-06-08 22:09:36,431 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 952mS.
+2026-06-08 22:09:36,432 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2026-06-08 22:09:36,433 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2026-06-08 22:09:51,378 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,379 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,379 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,379 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,379 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,379 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,379 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,379 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,379 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,379 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,379 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,379 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,380 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,380 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,380 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,380 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,380 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,380 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,380 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,380 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,421 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,422 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,422 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,430 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,430 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,430 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,430 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,430 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,430 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,431 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,431 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,431 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,431 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,431 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,431 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,431 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,431 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,431 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,431 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,431 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,431 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:09:51,464 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,771 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-06-08 22:10:00,805 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,806 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,806 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,806 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,806 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,806 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,806 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,807 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,807 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,807 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,807 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,807 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,807 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,807 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,807 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,807 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,807 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,807 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,807 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,807 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:00,835 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:10:03,670 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 495104480 Bytes (960495616)
+2026-06-08 22:10:03,942 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 594192864 Bytes (960495616)
+2026-06-08 22:10:04,109 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L4
+2026-06-08 22:10:04,109 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L4
+2026-06-08 22:10:04,109 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2026-06-08 22:10:04,109 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2026-06-08 22:10:04,109 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2026-06-08 22:10:04,109 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2026-06-08 22:10:04,109 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2026-06-08 22:10:04,109 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2026-06-08 22:10:04,109 [INFO] CodeGenerator:799 - code generatio: config db path: /opt/st/stm32cubeide_1.13.2_2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2026-06-08 22:10:04,195 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/MXTmpFiles/license.tmp_save
+2026-06-08 22:10:04,253 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/MXTmpFiles/license.tmp
+2026-06-08 22:10:04,268 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/gpio.c_save
+2026-06-08 22:10:04,324 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/gpio.c
+2026-06-08 22:10:04,326 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/gpio.h_save
+2026-06-08 22:10:04,377 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/gpio.h
+2026-06-08 22:10:04,491 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/adc.c_save
+2026-06-08 22:10:04,608 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/adc.c
+2026-06-08 22:10:04,610 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/adc.h_save
+2026-06-08 22:10:04,664 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/adc.h
+2026-06-08 22:10:04,668 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/tim.c_save
+2026-06-08 22:10:04,750 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/tim.c
+2026-06-08 22:10:04,751 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/tim.h_save
+2026-06-08 22:10:04,799 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/tim.h
+2026-06-08 22:10:04,802 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/usart.c_save
+2026-06-08 22:10:04,868 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/usart.c
+2026-06-08 22:10:04,869 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/usart.h_save
+2026-06-08 22:10:04,910 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/usart.h
+2026-06-08 22:10:04,914 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/stm32l4xx_it.c_save
+2026-06-08 22:10:04,956 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/stm32l4xx_it.c
+2026-06-08 22:10:04,957 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/stm32l4xx_it.h_save
+2026-06-08 22:10:04,993 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/stm32l4xx_it.h
+2026-06-08 22:10:05,010 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/stm32l4xx_hal_msp.c_save
+2026-06-08 22:10:05,072 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/stm32l4xx_hal_msp.c
+2026-06-08 22:10:05,073 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/MXTmpFiles/system.tmp_save
+2026-06-08 22:10:05,111 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/MXTmpFiles/system.tmp
+2026-06-08 22:10:05,113 [INFO] CodeEngine:311 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/stm32l4xx_hal_conf.h_save
+2026-06-08 22:10:05,154 [INFO] CodeEngine:335 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/stm32l4xx_hal_conf.h
+2026-06-08 22:10:05,164 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/main.h_save
+2026-06-08 22:10:05,203 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/main.h
+2026-06-08 22:10:05,204 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/main.c_save
+2026-06-08 22:10:05,253 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/main.c
+2026-06-08 22:10:05,462 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 16mS.
+2026-06-08 22:10:05,463 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2026-06-08 22:10:05,556 [INFO] ConfigFileManager:1457 - The Die is : DIE415
+2026-06-08 22:10:06,115 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 652mS.
+2026-06-08 22:10:06,115 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2026-06-08 22:10:06,116 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2026-06-08 22:11:52,423 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,449 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,449 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,449 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,449 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,449 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,449 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,449 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,449 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,449 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,449 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,449 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,449 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,449 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,449 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,449 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,449 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,449 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,449 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,449 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,449 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:11:52,470 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,857 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,858 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,858 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,858 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,858 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,858 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,858 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,858 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,858 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,858 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,858 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,858 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,858 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,858 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,858 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,858 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,858 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,858 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,858 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,858 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,880 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,904 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,905 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,905 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,905 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,905 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,905 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,905 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,905 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,905 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,905 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,905 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,905 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,905 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,905 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,905 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,905 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,905 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,905 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,905 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,905 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:01,926 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,685 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,686 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,686 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,686 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,686 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,686 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,686 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,686 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,686 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,686 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,686 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,686 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,686 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,687 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,687 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,687 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,687 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,687 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,687 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,687 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,708 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,732 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,733 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,733 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,733 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,733 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,733 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,733 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,733 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,733 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,733 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,733 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,733 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,733 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,733 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,733 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,733 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,733 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,733 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,733 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,733 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:04,761 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,804 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,805 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,805 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,805 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,805 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,805 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,805 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,805 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,805 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,805 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,805 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,805 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,805 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,805 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,805 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,805 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,805 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,805 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,805 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,805 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,833 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,862 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,863 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,864 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,864 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,864 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,864 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:10,885 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,765 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,766 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,766 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,766 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,766 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,766 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,766 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,766 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,767 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,767 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,767 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,767 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,767 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,767 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,767 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,767 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,767 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,767 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,767 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,767 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,794 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,817 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,818 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,818 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,818 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,818 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,818 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,818 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,818 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,818 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,818 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,818 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,818 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,818 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,818 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,818 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,818 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,818 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,818 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,818 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,818 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:12,840 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,642 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,642 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,642 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,642 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,642 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,642 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,642 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,642 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,643 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,643 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,643 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,643 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,643 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,643 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,643 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,643 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,643 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,643 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,643 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,643 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,665 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,696 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,697 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,697 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,697 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,697 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,697 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,697 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,697 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,697 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,697 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,697 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,697 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,697 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,697 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,697 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,697 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,697 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,697 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,697 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,697 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:14,718 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,078 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,079 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,080 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,080 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,080 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,080 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,080 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,080 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,080 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,080 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,080 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,080 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,080 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,080 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,080 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,080 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,080 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,080 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,080 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,080 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,102 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,124 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,125 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,125 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,125 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,125 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,125 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,125 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,125 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,125 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,125 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,125 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,125 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,125 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,125 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,125 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,125 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,125 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,125 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,125 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,125 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:18,156 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,893 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,894 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,894 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,894 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,894 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,894 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,894 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,894 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,894 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,894 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,894 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,894 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,894 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,894 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,894 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,894 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,894 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,894 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,894 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,894 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,914 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,938 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,939 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,939 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,939 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,939 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,939 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,939 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,939 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,939 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,939 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,939 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,939 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,939 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,939 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,939 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,939 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,939 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,939 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,939 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,939 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:20,959 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:22,355 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,499x372,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-06-08 22:12:23,262 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:23,263 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:23,263 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:23,263 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:23,263 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:23,263 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:23,263 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:23,263 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:23,263 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:23,263 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:23,263 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:23,263 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:23,263 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:23,263 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:23,263 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:23,263 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:23,263 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:23,263 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:23,263 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:23,263 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:23,284 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,914 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,915 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,915 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,915 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,915 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,915 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,915 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,915 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,915 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,915 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,915 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,915 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,915 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,915 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,915 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,915 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,915 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,915 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,915 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,915 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:28,934 [INFO] ADCParametersView:116 -                Rank 1 : false
+2026-06-08 22:12:34,760 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,499x372,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-06-08 22:12:35,788 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2026-06-08 22:12:37,578 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 650897488 Bytes (1003487232)
+2026-06-08 22:12:37,793 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 690221136 Bytes (1003487232)
+2026-06-08 22:12:37,911 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L4
+2026-06-08 22:12:37,911 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8L4
+2026-06-08 22:12:37,911 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2026-06-08 22:12:37,911 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ADC
+2026-06-08 22:12:37,911 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2026-06-08 22:12:37,911 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2026-06-08 22:12:37,911 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USART
+2026-06-08 22:12:37,911 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2026-06-08 22:12:37,911 [INFO] CodeGenerator:799 - code generatio: config db path: /opt/st/stm32cubeide_1.13.2_2/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2026-06-08 22:12:38,043 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/MXTmpFiles/license.tmp_save
+2026-06-08 22:12:38,094 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/MXTmpFiles/license.tmp
+2026-06-08 22:12:38,103 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/gpio.c_save
+2026-06-08 22:12:38,159 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/gpio.c
+2026-06-08 22:12:38,160 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/gpio.h_save
+2026-06-08 22:12:38,215 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/gpio.h
+2026-06-08 22:12:38,301 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/adc.c_save
+2026-06-08 22:12:38,360 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/adc.c
+2026-06-08 22:12:38,361 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/adc.h_save
+2026-06-08 22:12:38,400 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/adc.h
+2026-06-08 22:12:38,403 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/tim.c_save
+2026-06-08 22:12:38,461 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/tim.c
+2026-06-08 22:12:38,462 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/tim.h_save
+2026-06-08 22:12:38,505 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/tim.h
+2026-06-08 22:12:38,508 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/usart.c_save
+2026-06-08 22:12:38,555 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/usart.c
+2026-06-08 22:12:38,556 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/usart.h_save
+2026-06-08 22:12:38,606 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/usart.h
+2026-06-08 22:12:38,612 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/stm32l4xx_it.c_save
+2026-06-08 22:12:38,662 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/stm32l4xx_it.c
+2026-06-08 22:12:38,664 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/stm32l4xx_it.h_save
+2026-06-08 22:12:38,701 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/stm32l4xx_it.h
+2026-06-08 22:12:38,715 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/stm32l4xx_hal_msp.c_save
+2026-06-08 22:12:38,764 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/stm32l4xx_hal_msp.c
+2026-06-08 22:12:38,765 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/MXTmpFiles/system.tmp_save
+2026-06-08 22:12:38,801 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/MXTmpFiles/system.tmp
+2026-06-08 22:12:38,803 [INFO] CodeEngine:311 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/stm32l4xx_hal_conf.h_save
+2026-06-08 22:12:38,844 [INFO] CodeEngine:335 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/stm32l4xx_hal_conf.h
+2026-06-08 22:12:38,856 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/main.h_save
+2026-06-08 22:12:38,895 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Inc/main.h
+2026-06-08 22:12:38,896 [INFO] CodeEngine:255 - oldGeneratedFile, /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/main.c_save
+2026-06-08 22:12:38,945 [INFO] CodeEngine:279 - Generated code: /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_DC/Core/Src/main.c
+2026-06-08 22:12:39,209 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 23mS.
+2026-06-08 22:12:39,210 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2026-06-08 22:12:39,297 [INFO] ConfigFileManager:1457 - The Die is : DIE415
+2026-06-08 22:12:39,856 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 645mS.
+2026-06-08 22:12:39,856 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2026-06-08 22:12:39,856 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
+2026-06-08 22:19:44,358 [INFO] MainUpdater:2868 - connection check result : 10
+2026-06-08 22:19:44,358 [INFO] MainUpdater:2868 - connection check result : 10
+2026-06-08 22:19:44,397 [INFO] MicroXplorer:468 - Change Database Path : 
+2026-06-08 22:19:44,397 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.92
+2026-06-08 22:19:44,455 [WARN] ThirdParty:871 - waiting for thirdparty lock release [close project]
+2026-06-08 22:19:44,455 [INFO] ThirdParty:873 - entering critical section [close project]
+2026-06-08 22:19:44,455 [INFO] ThirdParty:883 - exiting critical section [close project]
+2026-06-08 22:19:44,459 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2026-06-08 22:19:44,464 [INFO] UtilMem:75 - Begin LoadConfig() Used Memory: 310720688 Bytes (1038090240)
+2026-06-08 22:19:44,465 [INFO] MicroXplorer:468 - Change Database Path : 
+2026-06-08 22:19:44,465 [INFO] MicroXplorer:498 - Change Database Version : DB.6.0.92
+2026-06-08 22:19:44,465 [INFO] OpenFileManager:308 - Change cursor
+2026-06-08 22:19:44,480 [INFO] RulesReader:64 - Compatibility file has been processed (293 Rules)
+2026-06-08 22:19:44,485 [INFO] Mcu:1946 - Initializing MCU STM32L476R(C-E-G)Tx STM32L476RGTx STM32L476RGT6
+2026-06-08 22:19:45,806 [INFO] Context:659 - Trying to add GPIOservice into a context  which must be forbidden
+2026-06-08 22:19:46,085 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2026-06-08 22:19:46,085 [INFO] RtosManager:555 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2026-06-08 22:19:46,085 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2026-06-08 22:19:46,085 [INFO] RtosManager:555 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2026-06-08 22:19:46,085 [WARN] ModelIntegratedComponent:184 - Missing modes for component STMicroelectronics:FreeRTOS:0.0.1:STMicroelectronics:RTOS:FreeRTOS:Core:::10.2.0:
+2026-06-08 22:19:46,085 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,085 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,085 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,085 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,085 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,085 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,085 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,085 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,085 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,085 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,085 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,085 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,085 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,086 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,086 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,086 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,086 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,086 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,086 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,086 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,086 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,086 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,086 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,086 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,086 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,086 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,086 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,086 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,086 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,086 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,086 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,086 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,086 [WARN] ModelIntegratedComponent:63 - No mode defined for component null
+2026-06-08 22:19:46,087 [INFO] ThirdPartyModel:298 - Start build external matchings
+2026-06-08 22:19:46,088 [INFO] ThirdPartyModel:316 - End build external matchings
+2026-06-08 22:19:46,090 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (ADC1) : Parameter (CommonPathInternal) has invalid value (null|ADC_CHANNEL_TEMPSENSOR|null|null)
+2026-06-08 22:19:46,090 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (ADC2) : Parameter (CommonPathInternal) has invalid value (null|null|null|null)
+2026-06-08 22:19:46,090 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Instance) has Id (ADC2) currently not set
+2026-06-08 22:19:46,090 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Request) has Id (ADC2) currently not set
+2026-06-08 22:19:46,090 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Direction) has Id (ADC2) currently not set
+2026-06-08 22:19:46,090 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphInc) has Id (ADC2) currently not set
+2026-06-08 22:19:46,090 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemInc) has Id (ADC2) currently not set
+2026-06-08 22:19:46,090 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (PeriphDataAlignment) has Id (ADC2) currently not set
+2026-06-08 22:19:46,090 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (MemDataAlignment) has Id (ADC2) currently not set
+2026-06-08 22:19:46,090 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Mode) has Id (ADC2) currently not set
+2026-06-08 22:19:46,091 [INFO] ImportTextPane:194 - (OptionalMessage_ERROR) IP (DMA) : Parameter (Priority) has Id (ADC2) currently not set
+2026-06-08 22:19:46,247 [INFO] UtilMem:75 - End LoadConfig() Used Memory: 348055000 Bytes (1050673152)
+2026-06-08 22:19:46,258 [WARN] ThirdParty:833 - waiting for thirdparty lock release [change project]
+2026-06-08 22:19:46,259 [INFO] ThirdParty:835 - entering critical section [change project]
+2026-06-08 22:19:46,259 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USBPD 4.1
+2026-06-08 22:19:46,259 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 1.0.0
+2026-06-08 22:19:46,259 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2026-06-08 22:19:46,259 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics LIBJPEG 8.0.0
+2026-06-08 22:19:46,259 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FP-ATR-SIGFOX1 3.2.0
+2026-06-08 22:19:46,259 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2026-06-08 22:19:46,259 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2026-06-08 22:19:46,259 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics STM32_WPAN 1.0.0
+2026-06-08 22:19:46,259 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2026-06-08 22:19:46,259 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics HAL Drivers 0.0.0
+2026-06-08 22:19:46,259 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2026-06-08 22:19:46,259 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics ThreadX 0.0.2
+2026-06-08 22:19:46,259 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2026-06-08 22:19:46,259 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2026-06-08 22:19:46,259 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2026-06-08 22:19:46,259 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2026-06-08 22:19:46,259 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2026-06-08 22:19:46,259 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2026-06-08 22:19:46,259 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2026-06-08 22:19:46,259 [INFO] ThirdParty:1030 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2026-06-08 22:19:46,259 [INFO] ThirdParty:841 - exiting critical section [change project]
+2026-06-08 22:19:46,395 [INFO] PinOutPanel:1499 - setPackage(No Configuration,No Configuration)
+2026-06-08 22:19:46,395 [INFO] PinOutPanel:1499 - setPackage(STM32L476RGTx,LQFP64)
+2026-06-08 22:19:46,625 [INFO] UtilMem:75 - Before build in PCC Used Memory: 428694656 Bytes (1050673152)
+2026-06-08 22:19:46,717 [INFO] UtilMem:75 - After build in PCC Used Memory: 508386432 Bytes (1050673152)
+2026-06-08 22:19:46,728 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,728 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,728 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,728 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,728 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,728 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,728 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,728 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,728 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,728 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,728 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,728 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,728 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,728 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,728 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,729 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,729 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,729 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,729 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,729 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,729 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,729 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,729 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,729 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,729 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,729 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,729 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,729 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,729 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,729 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,729 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,730 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,730 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,730 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,730 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,730 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,730 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,730 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,730 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,730 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,730 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,730 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,730 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,730 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,730 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,731 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,731 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,731 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,731 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,731 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,731 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,731 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,731 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,731 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,731 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,731 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,731 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,731 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,732 [INFO] IPUIPlugin:80 - create IPUIPlugin
+2026-06-08 22:19:46,760 [INFO] CADModel:165 - CPN selected for project levelSTM32L476RGT6
+2026-06-08 22:19:46,760 [INFO] CADModel:114 - Register for checkConnection events
+2026-06-08 22:19:46,797 [INFO] OpenFileManager:328 - Restore cursor
+2026-06-08 22:25:18,360 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 

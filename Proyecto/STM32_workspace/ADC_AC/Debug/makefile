@@ -60,8 +60,8 @@ all: main-build
 main-build: ADC_AC.elf secondary-outputs
 
 # Tool invocations
-ADC_AC.elf ADC_AC.map: $(OBJS) $(USER_OBJS) C:\Users\sebas\OneDrive\Escritorio\Seminario\ avanzado\ PC\IPD_439_Workspaces\Proyecto\STM32_workspace\ADC_AC\STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "ADC_AC.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\ADC_AC\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC_AC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+ADC_AC.elf ADC_AC.map: $(OBJS) $(USER_OBJS) /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_AC/STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "ADC_AC.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/ADC_AC/STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ADC_AC.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

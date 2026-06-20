@@ -1,36 +1,82 @@
-!SESSION 2026-04-25 11:43:07.070 -----------------------------------------------
+!SESSION 2026-06-04 11:37:16.363 -----------------------------------------------
 eclipse.buildId=Version 1.13.2
 java.version=17.0.6
 java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
 
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-04-25 11:44:14.049
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-06-04 11:37:21.180
 !MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
 
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-04-25 11:44:14.064
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-06-04 11:37:21.180
+!MESSAGE Log4j2 initialized with config file /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/.metadata/.log4j2.xml
 
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-04-25 11:44:20.144
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-06-04 11:37:22.277
 !MESSAGE Started RMI Server, listening on port 41337
 
-!ENTRY org.eclipse.cdt.core 1 0 2026-04-25 11:54:16.756
-!MESSAGE Indexed 'ADC_gain_offset' (19 sources, 81 headers) in 5.36 sec: 5,116 declarations; 24,147 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0068%)
+!ENTRY org.eclipse.cdt.core 1 0 2026-06-04 11:47:11.476
+!MESSAGE Indexed 'ADC_DC' (30 sources, 93 headers) in 2.21 sec: 8,007 declarations; 61,968 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0029%)
 
-!ENTRY org.eclipse.cdt.core 1 0 2026-04-25 12:03:25.964
-!MESSAGE Indexed 'DAC_gain_offset' (19 sources, 81 headers) in 2.48 sec: 5,116 declarations; 24,147 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0068%)
+!ENTRY org.eclipse.cdt.core 1 0 2026-06-04 11:48:12.276
+!MESSAGE Indexed 'ADC_AC' (30 sources, 93 headers) in 1.63 sec: 7,983 declarations; 61,639 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0029%)
+!SESSION 2026-06-04 12:31:46.839 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
 
-!ENTRY com.st.stm32cube.ide.mcu.debug.launch 2 0 2026-04-25 12:49:06.082
-!MESSAGE Won't launch debug session since we failed to locate the binary.
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-06-04 12:34:08.269
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
 
-!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-04-25 13:29:05.228
-!MESSAGE Error in final launch sequence:
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-06-04 12:34:08.269
+!MESSAGE Log4j2 initialized with config file /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/.metadata/.log4j2.xml
 
-Setup exceptions
-!STACK 1
-org.eclipse.core.runtime.CoreException: Setup exceptions
-	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
-	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-06-04 12:34:24.460
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.jobs 4 2 2026-06-04 12:38:13.949
+!MESSAGE An internal error occurred during: "File Transport Reader".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.osgi.framework.BundleContext.createFilter(String)" because "context" is null
+	at org.osgi.util.tracker.ServiceTracker.<init>(ServiceTracker.java:187)
+	at org.osgi.util.tracker.ServiceTracker.<init>(ServiceTracker.java:250)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient5.Activator.getLogService(Activator.java:202)
+	at org.eclipse.ecf.internal.provider.filetransfer.httpclient5.Activator.log(Activator.java:213)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.hardClose(HttpClientRetrieveFileTransfer.java:200)
+	at org.eclipse.ecf.provider.filetransfer.retrieve.AbstractRetrieveFileTransfer$1.performFileTransfer(AbstractRetrieveFileTransfer.java:199)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2026-06-04 12:42:03.932 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-06-04 12:42:10.467
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-06-04 12:42:10.467
+!MESSAGE Log4j2 initialized with config file /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-06-04 12:42:14.094
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-06-04 14:23:52.575
+!MESSAGE Indexed 'ADC_AC' (30 sources, 93 headers) in 1.92 sec: 7,983 declarations; 61,639 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0029%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-06-04 14:26:21.808
+!MESSAGE Indexed 'ADC_AC' (30 sources, 93 headers) in 1.31 sec: 8,007 declarations; 61,964 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0029%)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-06-04 14:42:39.967
+!MESSAGE Could not determine GDB version using command: arm-none-eabi-gdb --version
+!STACK 0
+java.lang.Exception: arm-none-eabi-gdb: error while loading shared libraries: libncurses.so.5: cannot open shared object file: No such file or directory
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:352)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:536)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
 	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
 	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
 	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
@@ -39,661 +85,15 @@ org.eclipse.core.runtime.CoreException: Setup exceptions
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2026-04-25 13:29:05.229
-!MESSAGE Setup exceptions
 
-!ENTRY org.eclipse.ui 4 0 2026-04-25 14:25:37.962
-!MESSAGE Unhandled event loop exception
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-06-04 14:42:52.906
+!MESSAGE Could not determine GDB version using command: arm-none-eabi-gdb --version
 !STACK 0
-java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.IWorkbenchWindow.getShell()" because the return value of "org.eclipse.ui.IWorkbench.getActiveWorkbenchWindow()" is null
-	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.AwtEnvironment.getShell(AwtEnvironment.java:281)
-	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.SwtInputBlocker.block(SwtInputBlocker.java:98)
-	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.AwtEnvironment.invokeAwt(AwtEnvironment.java:179)
-	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.EmbeddedSwingComposite$3.widgetDisposed(EmbeddedSwingComposite.java:244)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:127)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1071)
-	at org.eclipse.swt.widgets.Widget.release(Widget.java:814)
-	at org.eclipse.swt.widgets.Composite.releaseChildren(Composite.java:925)
-	at org.eclipse.swt.widgets.Canvas.releaseChildren(Canvas.java:168)
-	at org.eclipse.swt.widgets.Decorations.releaseChildren(Decorations.java:711)
-	at org.eclipse.swt.widgets.Shell.releaseChildren(Shell.java:1376)
-	at org.eclipse.swt.widgets.Widget.release(Widget.java:821)
-	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:428)
-	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:392)
-	at org.eclipse.swt.widgets.Display.release(Display.java:3698)
-	at org.eclipse.swt.graphics.Device.dispose(Device.java:324)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:168)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-!SESSION 2026-04-27 11:19:56.133 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-04-27 11:20:32.060
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-04-27 11:20:32.074
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-04-27 11:20:43.902
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2026-04-27 14:20:51.964 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-04-27 14:21:55.679
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-04-27 14:21:55.695
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-04-27 14:22:07.371
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2026-04-27 15:56:09.095 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-04-27 15:57:03.199
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-04-27 15:57:03.219
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-04-27 15:57:11.254
-!MESSAGE Started RMI Server, listening on port 41337
-
-!ENTRY org.eclipse.cdt.ui 4 4 2026-04-27 17:46:23.193
-!MESSAGE Error
-!STACK 0
-org.eclipse.jface.text.BadLocationException
-	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1054)
-	at org.eclipse.jface.text.TreeLineTracker.lineByOffset(TreeLineTracker.java:268)
-	at org.eclipse.jface.text.TreeLineTracker.getLineNumberOfOffset(TreeLineTracker.java:1122)
-	at org.eclipse.jface.text.AbstractLineTracker.getLineNumberOfOffset(AbstractLineTracker.java:246)
-	at org.eclipse.jface.text.AbstractDocument.getLineOfOffset(AbstractDocument.java:872)
-	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getLineOfOffset(SynchronizableDocument.java:334)
-	at org.eclipse.cdt.internal.ui.text.CAutoIndentStrategy.smartIndentAfterClosingBracket(CAutoIndentStrategy.java:199)
-	at org.eclipse.cdt.internal.ui.text.CAutoIndentStrategy.smartIndentOnKeypress(CAutoIndentStrategy.java:936)
-	at org.eclipse.cdt.internal.ui.text.CAutoIndentStrategy.customizeDocumentCommand(CAutoIndentStrategy.java:1140)
-	at org.eclipse.jface.text.TextViewer.customizeDocumentCommand(TextViewer.java:3702)
-	at org.eclipse.jface.text.TextViewer.handleVerifyEvent(TextViewer.java:3744)
-	at org.eclipse.jface.text.source.projection.ProjectionViewer.handleVerifyEvent(ProjectionViewer.java:1250)
-	at org.eclipse.jface.text.TextViewer$TextVerifyListener.verifyText(TextViewer.java:426)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:277)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
-	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
-	at org.eclipse.swt.custom.StyledText.modifyContent(StyledText.java:7097)
-	at org.eclipse.swt.custom.StyledText.sendKeyEvent(StyledText.java:8029)
-	at org.eclipse.swt.custom.StyledText.doContent(StyledText.java:2035)
-	at org.eclipse.swt.custom.StyledText.handleKey(StyledText.java:5716)
-	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5747)
-	at org.eclipse.swt.custom.StyledText.lambda$28(StyledText.java:5426)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
-	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1117)
-	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1113)
-	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1594)
-	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4865)
-	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4743)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5022)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3640)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-!SESSION 2026-04-27 20:22:25.570 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-04-27 20:28:55.596
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-04-27 20:28:55.609
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-04-27 20:29:09.647
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2026-04-28 01:05:04.556 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-04-28 01:05:55.929
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-04-28 01:05:55.944
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-04-28 01:06:10.181
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2026-04-28 10:15:05.060 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-04-28 10:15:42.631
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-04-28 10:15:42.647
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-04-28 10:15:55.923
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2026-04-28 11:48:51.913 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-04-28 11:49:02.578
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-04-28 11:49:02.581
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-04-28 11:49:11.360
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2026-05-01 17:41:44.707 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-05-01 17:45:00.427
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-05-01 17:45:00.441
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-05-01 17:45:10.977
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2026-05-04 08:26:14.905 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-05-04 08:28:57.030
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-05-04 08:28:57.043
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-05-04 08:29:09.250
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2026-05-04 12:48:41.427 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-05-04 12:49:53.318
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-05-04 12:49:53.337
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-05-04 12:50:05.972
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2026-05-04 23:48:09.796 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-05-04 23:48:51.474
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-05-04 23:48:51.487
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-05-04 23:49:06.423
-!MESSAGE Started RMI Server, listening on port 41337
-
-!ENTRY org.eclipse.cdt.ui 4 0 2026-05-05 01:04:05.676
-!MESSAGE Error in CDT UI during reconcile
-!STACK 1
-C Model Exception: C Model Status [Element main.c does not exist.]
-	at org.eclipse.cdt.internal.core.model.CElement.newNotPresentException(CElement.java:485)
-	at org.eclipse.cdt.internal.core.model.TranslationUnit.makeConsistent(TranslationUnit.java:583)
-	at org.eclipse.cdt.internal.core.model.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:65)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.execute(CModelOperation.java:346)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.run(CModelOperation.java:613)
-	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:641)
-	at org.eclipse.cdt.internal.core.model.WorkingCopy.reconcile(WorkingCopy.java:365)
-	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:79)
-	at org.eclipse.cdt.internal.ui.text.CReconcilingStrategy.reconcile(CReconcilingStrategy.java:64)
-	at org.eclipse.cdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:89)
-	at org.eclipse.cdt.internal.ui.text.CCompositeReconcilingStrategy.reconcile(CCompositeReconcilingStrategy.java:90)
-	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
-	at org.eclipse.cdt.internal.ui.text.CReconciler.process(CReconciler.java:346)
-	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
-!SUBENTRY 1 org.eclipse.cdt.core 4 969 2026-05-05 01:04:05.679
-!MESSAGE Element main.c does not exist.
-!SESSION 2026-05-05 02:00:44.662 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-05-05 02:01:26.083
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-05-05 02:01:26.098
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-05-05 02:01:40.139
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2026-05-05 05:02:04.910 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-05-05 05:02:43.904
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-05-05 05:02:43.920
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-05-05 05:02:55.606
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2026-05-05 07:49:32.124 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-05-05 07:49:41.364
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-05-05 07:49:41.368
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-05-05 07:49:49.343
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2026-05-11 19:05:51.854 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-05-11 19:06:53.382
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-05-11 19:06:53.397
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-05-11 19:07:06.888
-!MESSAGE Started RMI Server, listening on port 41337
-
-!ENTRY org.eclipse.ui 4 0 2026-05-11 21:00:22.037
-!MESSAGE Unhandled event loop exception
-!STACK 0
-org.eclipse.swt.SWTException: Widget is disposed
-	at org.eclipse.swt.SWT.error(SWT.java:4918)
-	at org.eclipse.swt.SWT.error(SWT.java:4833)
-	at org.eclipse.swt.SWT.error(SWT.java:4804)
-	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
-	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:369)
-	at org.eclipse.swt.widgets.Label.setImage(Label.java:348)
-	at org.eclipse.jface.dialogs.TitleAreaDialog.setTitleImage(TitleAreaDialog.java:692)
-	at org.eclipse.jface.wizard.WizardDialog.hardClose(WizardDialog.java:894)
-	at org.eclipse.jface.wizard.WizardDialog.close(WizardDialog.java:521)
-	at org.eclipse.jface.wizard.WizardDialog.cancelPressed(WizardDialog.java:512)
-	at org.eclipse.jface.wizard.WizardDialog.lambda$0(WizardDialog.java:315)
-	at org.eclipse.swt.events.SelectionListener$1.widgetSelected(SelectionListener.java:84)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
-	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
-	at org.eclipse.jface.window.Window.open(Window.java:799)
-	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:130)
-	at org.eclipse.jface.action.Action.runWithEvent(Action.java:474)
-	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:580)
-	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:414)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4054)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3642)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-
-!ENTRY org.eclipse.cdt.core 1 0 2026-05-11 21:03:34.366
-!MESSAGE Indexed 'ADC_AC' (29 sources, 92 headers) in 6.54 sec: 7,972 declarations; 61,530 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0029%)
-!SESSION 2026-05-12 06:23:44.705 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-05-12 06:24:57.821
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-05-12 06:24:57.834
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-05-12 06:25:09.620
-!MESSAGE Started RMI Server, listening on port 41337
-
-!ENTRY org.eclipse.cdt.core 1 0 2026-05-12 06:27:08.200
-!MESSAGE Indexed 'DAC_AC' (29 sources, 91 headers) in 5.5 sec: 7,297 declarations; 52,184 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0034%)
-!SESSION 2026-05-12 06:29:01.788 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-05-12 06:29:13.050
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-05-12 06:29:13.052
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-05-12 06:29:20.314
-!MESSAGE Started RMI Server, listening on port 41337
-
-!ENTRY org.eclipse.ui 4 0 2026-05-12 07:46:35.993
-!MESSAGE Unhandled event loop exception
-!STACK 0
-org.eclipse.swt.SWTException: Widget is disposed
-	at org.eclipse.swt.SWT.error(SWT.java:4918)
-	at org.eclipse.swt.SWT.error(SWT.java:4833)
-	at org.eclipse.swt.SWT.error(SWT.java:4804)
-	at org.eclipse.swt.widgets.Widget.error(Widget.java:450)
-	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:369)
-	at org.eclipse.swt.widgets.Label.setText(Label.java:389)
-	at elf_analyzer.ElfAnalyzerView.lambda$1(ElfAnalyzerView.java:270)
-	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
-	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4029)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3645)
-	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:166)
-	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:368)
-	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:470)
-	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:230)
-	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.disconnectFromWorkspace(IDEWorkbenchAdvisor.java:560)
-	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$2.run(IDEWorkbenchAdvisor.java:367)
-	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.postShutdown(IDEWorkbenchAdvisor.java:388)
-	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:2931)
-	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1123)
-	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1391)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
-	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1391)
-	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1367)
-	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1717)
-	at org.eclipse.ui.internal.WorkbenchWindow.lambda$5(WorkbenchWindow.java:1744)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
-	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1744)
-	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1753)
-	at org.eclipse.ui.internal.WorkbenchWindow.lambda$2(WorkbenchWindow.java:504)
-	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:570)
-	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4256)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
-	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:269)
-	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1550)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4745)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2284)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5022)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
-	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4844)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2284)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5022)
-	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
-	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
-	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4844)
-	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
-	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1478)
-	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2284)
-	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5022)
-	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3640)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
-	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
-!SESSION 2026-05-12 07:47:48.091 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-05-12 07:48:55.406
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-05-12 07:48:55.407
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-05-12 07:49:03.372
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2026-05-22 17:30:53.530 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-05-22 17:31:38.399
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-05-22 17:31:38.423
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-05-22 17:31:52.728
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2026-05-26 04:58:56.247 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-05-26 04:59:24.470
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-05-26 04:59:24.484
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-05-26 04:59:35.325
-!MESSAGE Started RMI Server, listening on port 41337
-
-!ENTRY org.eclipse.cdt.dsf.gdb 4 10004 2026-05-26 06:49:58.360
-!MESSAGE Failed to execute MI command:
--stack-list-frames 0 0
-Error message from debugger back end:
-Invalid thread id: 1
-!STACK 0
-java.lang.Exception: Invalid thread id: 1
-	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:1024)
-	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:853)
-!SESSION 2026-05-26 07:27:51.413 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-05-26 07:28:13.012
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-05-26 07:28:13.028
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-05-26 07:28:20.262
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2026-06-01 10:22:30.877 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-06-01 10:22:55.968
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-06-01 10:22:55.978
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-06-01 10:23:04.528
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2026-06-01 18:05:59.676 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-06-01 18:06:21.780
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-06-01 18:06:21.792
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-06-01 18:06:30.594
-!MESSAGE Started RMI Server, listening on port 41337
-!SESSION 2026-06-02 09:17:51.176 -----------------------------------------------
-eclipse.buildId=Version 1.13.2
-java.version=17.0.6
-java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-06-02 09:18:29.976
-!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
-
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-06-02 09:18:29.998
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
-
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-06-02 09:18:47.853
-!MESSAGE Started RMI Server, listening on port 41337
-
-!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2026-06-02 09:32:15.394
-!MESSAGE Error in final launch sequence:
-
-Setup exceptions
-!STACK 1
-org.eclipse.core.runtime.CoreException: Setup exceptions
-	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
-	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+java.lang.Exception: arm-none-eabi-gdb: error while loading shared libraries: libncurses.so.5: cannot open shared object file: No such file or directory
+
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.getGDBVersion(LaunchUtils.java:352)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getGDBVersion(GdbLaunch.java:536)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:157)
 	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
 	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
 	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
@@ -702,298 +102,78 @@ org.eclipse.core.runtime.CoreException: Setup exceptions
 	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
 	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2026-06-02 09:32:15.395
-!MESSAGE Setup exceptions
-!SESSION 2026-06-02 10:00:51.466 -----------------------------------------------
+!SESSION 2026-06-04 15:07:18.777 -----------------------------------------------
 eclipse.buildId=Version 1.13.2
 java.version=17.0.6
 java.vendor=Eclipse Adoptium
-BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
-Command-line arguments:  -os win32 -ws win32 -arch x86_64
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
 
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-06-02 10:01:39.779
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-06-04 15:07:26.803
 !MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
 
-!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-06-02 10:01:39.806
-!MESSAGE Log4j2 initialized with config file C:\Users\sebas\OneDrive\Escritorio\Seminario avanzado PC\IPD_439_Workspaces\Proyecto\STM32_workspace\.metadata\.log4j2.xml
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-06-04 15:07:26.804
+!MESSAGE Log4j2 initialized with config file /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/.metadata/.log4j2.xml
 
-!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-06-02 10:01:50.285
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-06-04 15:07:30.115
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2026-06-04 16:50:52.145 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-06-04 16:50:56.661
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-06-04 16:50:56.661
+!MESSAGE Log4j2 initialized with config file /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-06-04 16:51:00.485
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2026-06-08 21:48:47.656 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-06-08 21:48:52.750
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-06-08 21:48:52.751
+!MESSAGE Log4j2 initialized with config file /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-06-08 21:48:58.445
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2026-06-09 09:15:22.700 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2026-06-09 09:16:50.444
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2026-06-09 09:16:50.445
+!MESSAGE Log4j2 initialized with config file /home/papijou/Desktop/IPD439/IPD_439_Workspaces/Proyecto/STM32_workspace/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2026-06-09 09:16:54.944
 !MESSAGE Started RMI Server, listening on port 41337
 
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2026-06-02 10:02:19.361
-!MESSAGE Connection to https://sw-center.st.com/stm32cubeide/openstlinux/updatesite1/p2.index failed on Host desconocido (sw-center.st.com). Retry attempt 0 started
+!ENTRY org.eclipse.core.jobs 4 2 2026-06-09 09:34:06.069
+!MESSAGE An internal error occurred during: "Execute Debug Command".
 !STACK 0
-java.net.UnknownHostException: Host desconocido (sw-center.st.com)
-	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
-	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
-	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1534)
-	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1524)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1381)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
-	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
-	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1001)
-	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2026-06-02 10:02:19.600
-!MESSAGE Unknown Host: https://sw-center.st.com/stm32cubeide/openstlinux/updatesite1/compositeContent.xml
-!STACK 0
-java.net.UnknownHostException: sw-center.st.com
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1524)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1381)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
-	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:251)
-	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:71)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2026-06-02 10:02:19.600
-!MESSAGE Connection to https://sw-center.st.com/stm32cubeide/updatesite1/p2.index failed on sw-center.st.com. Retry attempt 0 started
-!STACK 0
-java.net.UnknownHostException: sw-center.st.com
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1524)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1381)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
-	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
-	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1001)
-	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2026-06-02 10:02:19.826
-!MESSAGE Unknown Host: https://sw-center.st.com/stm32cubeide/updatesite1/compositeContent.xml
-!STACK 0
-java.net.UnknownHostException: sw-center.st.com
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1524)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1381)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
-	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:251)
-	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:71)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2026-06-02 10:02:19.833
-!MESSAGE Connection to https://download.eclipse.org/releases/2023-03/p2.index failed on Host desconocido (download.eclipse.org). Retry attempt 0 started
-!STACK 0
-java.net.UnknownHostException: Host desconocido (download.eclipse.org)
-	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
-	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
-	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1534)
-	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1524)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1381)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
-	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
-	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1001)
-	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2026-06-02 10:02:20.051
-!MESSAGE Unknown Host: https://download.eclipse.org/releases/2023-03/compositeContent.xml
-!STACK 0
-java.net.UnknownHostException: download.eclipse.org
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1524)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1381)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
-	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:251)
-	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:71)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2026-06-02 10:02:20.059
-!MESSAGE Connection to https://download.eclipse.org/tools/cdt/releases/latest/p2.index failed on download.eclipse.org. Retry attempt 0 started
-!STACK 0
-java.net.UnknownHostException: download.eclipse.org
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1524)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1381)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
-	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
-	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.access$0(HttpClientRetrieveFileTransfer.java:1001)
-	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
-	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
-
-!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1006 2026-06-02 10:02:20.289
-!MESSAGE Unknown Host: https://download.eclipse.org/tools/cdt/releases/latest/compositeContent.xml
-!STACK 0
-java.net.UnknownHostException: download.eclipse.org
-	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
-	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1524)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1381)
-	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
-	at org.apache.hc.client5.http.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:43)
-	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:118)
-	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:396)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:158)
-	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:168)
-	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:136)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:175)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:96)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:133)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement$1.proceed(ExecChainElement.java:57)
-	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:115)
-	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
-	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:170)
-	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:75)
-	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:251)
-	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:71)
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: The application has not been initialized.
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:113)
+	at org.eclipse.core.internal.runtime.InternalPlatform.assertInitialized(InternalPlatform.java:144)
+	at org.eclipse.core.internal.runtime.InternalPlatform.getAdapterManager(InternalPlatform.java:165)
+	at org.eclipse.core.runtime.Platform.getAdapterManager(Platform.java:609)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getAdapter(GdbLaunch.java:454)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.disconnect(GdbLaunch.java:338)
+	at org.eclipse.debug.internal.core.commands.DisconnectCommand.execute(DisconnectCommand.java:35)
+	at org.eclipse.debug.internal.core.commands.ForEachCommand.doExecute(ForEachCommand.java:36)
+	at org.eclipse.debug.core.commands.AbstractDebugCommand$1.run(AbstractDebugCommand.java:215)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
