@@ -4,58 +4,122 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy import stats
 
-
+# ==========================================
+# Configuración del Puerto y Parámetros
+# ==========================================
 PORT = '/dev/ttyACM0'      
 BAUDRATE = 115200     
 SAMPLES = 40000       
-TIMEOUT = 10         
+TEMP_SAMPLES = 1     # Coincide con MAX_TEMP_SAMPLES en callbacks.c
+TIMEOUT = 12          # Aumentado para dar margen a los 5 segundos del Timer 3 + envío DC
 BITS = 12
 V_REF = 3.3           # Vref del ADC de la STM32 
-V_MAX_IN = 3.1     # Amplitud máxima de la rampa
-V_MIN_IN = 0.1      
+V_MAX_IN = 3.1        # Amplitud máxima de la rampa
+V_MIN_IN = 0.1*1.05-0.025      
 MAX_CODE = (2**BITS) - 1
 
-def capture_uart_data():
-    """Envía el comando de inicio y captura las muestras por UART, ignorando checksums."""
-    print(f"Abriendo puerto {PORT} a {BAUDRATE} baudios...")
+# ==========================================
+# Parámetros del Sensor de Temperatura STM32
+# ==========================================
+V_30 = 0.76           # Voltaje típico a 30°C (Revisar datasheet, ej: 0.76V)
+AVG_SLOPE = 0.0025    # Pendiente en V/°C (Revisar datasheet, ej: 2.5 mV/°C)
+TEMP_BASE = 30.0      # Temperatura de referencia para V_30
+
+def adc_to_celsius(raw_val):
+    """Convierte el valor RAW del ADC a grados Celsius."""
+    v_sense = (raw_val * V_REF) / MAX_CODE
+    temp_c = ((v_sense - V_30) / AVG_SLOPE) + TEMP_BASE
+    return temp_c
+
+def capture_temperature_burst(ser, expected_samples):
+    ser.write(b'\x02')
+    
+    temps_raw = []
+    temps_celsius = []
+    start_time = time.time()
+    
+    while len(temps_raw) < expected_samples:
+        # Timeout de seguridad
+        if time.time() - start_time > 10:
+            print("   [!] Timeout alcanzado esperando datos de temperatura.")
+            break
+            
+        line = ser.readline()
+        if line:
+            try:
+                decoded_line = line.decode('utf-8').strip()
+                if decoded_line.startswith('T:'):
+                    # Extraer el valor después de 'T:'
+                    raw_val = int(decoded_line.split(':')[1])
+                    temp_c = adc_to_celsius(raw_val)
+                    
+                    temps_raw.append(raw_val)
+                    temps_celsius.append(temp_c)
+                    print(f"   Temp :{temp_c:.2f} °C")
+            except (ValueError, IndexError):
+                pass
+                
+    return np.array(temps_celsius)
+
+def capture_dc_data(ser, expected_samples):
+    ser.write(b'\x01')
+    
     adc_data = []
+    lines_received = 0
+    start_time = time.time()
+    
+    while lines_received < expected_samples:
+        line = ser.readline()
+        if not line:
+            print("   [!] Timeout alcanzado antes de recibir todas las muestras DC.")
+            break
+        
+        try:
+            decoded_line = line.decode('utf-8').strip()
+            # Asegurarnos de que no sea basura ni una trama de temperatura retrasada
+            if decoded_line and not decoded_line.startswith('T:'):
+                val = int(decoded_line)
+                adc_data.append(val)
+                lines_received += 1
+                
+                    
+        except ValueError:
+            pass
+            
+    print(f"<- Captura DC completada ({len(adc_data)}/{expected_samples} muestras).")
+    return np.array(adc_data)
+
+def run_capture_sequence():
+    """Ejecuta la secuencia completa: Temp inicial -> Datos DC -> Temp final"""
+    print(f"Abriendo puerto {PORT} a {BAUDRATE} baudios...")
     
     try:
         with serial.Serial(PORT, BAUDRATE, timeout=TIMEOUT) as ser:
-            # Enviar byte 0x01 para iniciar TIM2 y la conversión ADC
-            print("Enviando comando de inicio (0x01)...")
-            ser.write(b'\x01')
+            ser.reset_input_buffer()
+            time.sleep(0.5)
             
-            print(f"Recibiendo {SAMPLES} muestras. Esto tomará unos segundos...")
-            lines_received = 0
+            #  Medición de temperatura inicial
+            initial_temps = capture_temperature_burst(ser, TEMP_SAMPLES)
             
-            while lines_received < SAMPLES:
-                line = ser.readline()
-                if not line:
-                    print("Timeout alcanzado antes de recibir todas las muestras.")
-                    break
-                
-                try:
-                    decoded_line = line.decode('utf-8').strip()
-                    # Ignorar las tramas de temperatura provenientes de ADC1/TIM3
-                    if decoded_line and not decoded_line.startswith('T:'):
-                        adc_data.append(int(decoded_line))
-                        lines_received += 1
-                except ValueError:
-                    # Ignorar líneas corruptas o que no se puedan convertir a entero
-                    pass
-
+            time.sleep(0.5)
+            
+            dc_data = capture_dc_data(ser, SAMPLES)
+            
+            time.sleep(0.5)
+            
+            final_temps = capture_temperature_burst(ser, TEMP_SAMPLES)
+            
+            return initial_temps, dc_data, final_temps
+            
     except serial.SerialException as e:
         print(f"Error de comunicación serial: {e}")
-        return None
-
-    return np.array(adc_data)
+        return None, None, None
 
 
 def analyze_and_plot_with_linearity(adc_data):
     """Calcula errores estáticos (Offset/Ganancia) y métricas de linealidad (DNL/INL)."""
-    if len(adc_data) == 0:
-        print("No hay datos para analizar.")
+    if adc_data is None or len(adc_data) == 0:
+        print("No hay datos DC para analizar.")
         return
 
     adc_sorted = np.sort(adc_data)
@@ -69,7 +133,6 @@ def analyze_and_plot_with_linearity(adc_data):
 
     hist, bin_edges = np.histogram(adc_data, bins=np.arange(MAX_CODE + 2))
     
-    # Identificar los códigos reales que la rampa alcanzó a estimular
     min_code_hit = max(1, np.min(adc_data))
     max_code_hit = min(MAX_CODE - 1, np.max(adc_data))
     
@@ -84,22 +147,19 @@ def analyze_and_plot_with_linearity(adc_data):
         
     inl_active = np.cumsum(dnl_active)
 
-    # Crear arreglos completos llenos de NaN para evitar graficar los extremos muertos
     dnl = np.full(MAX_CODE - 1, np.nan)
     inl = np.full(MAX_CODE - 1, np.nan)
     
-    # Insertar los resultados calculados en sus posiciones correctas (índice 0 = código 1)
     start_idx = min_code_hit - 1
     end_idx = max_code_hit
     dnl[start_idx:end_idx] = dnl_active
     inl[start_idx:end_idx] = inl_active
 
-    # Métricas máximas (ignorando los NaNs)
     dnl_max = np.nanmax(np.abs(dnl))
     inl_max = np.nanmax(np.abs(inl))
 
     # ==========================================
-    # 3. Reporte en Consola
+    # Reporte en Consola
     # ==========================================
     print("\n" + "="*45)
     print(" RESULTADOS DE CARACTERIZACIÓN (INCL. DNL/INL)")
@@ -112,12 +172,11 @@ def analyze_and_plot_with_linearity(adc_data):
     print("="*45)
 
     # ==========================================
-    # 4. Visualización Técnica
+    # Visualización Técnica
     # ==========================================
     plt.style.use('seaborn-v0_8-whitegrid')
     fig, axes = plt.subplots(3, 1, figsize=(10, 12), gridspec_kw={'height_ratios': [2, 1, 1]})
     
-    # 4a. Función de transferencia
     ideal_codes = v_in_array * ideal_slope
     real_fit_codes = m_real * v_in_array + c_real
     axes[0].plot(v_in_array, ideal_codes, 'k--', label='Ideal', alpha=0.7)
@@ -127,16 +186,13 @@ def analyze_and_plot_with_linearity(adc_data):
     axes[0].set_ylabel('Código (LSB)')
     axes[0].legend()
     
-    # Eje X para DNL/INL (Códigos del 1 al 4094)
     codes = np.arange(1, MAX_CODE)
     
-    # 4b. DNL
     axes[1].plot(codes, dnl, 'g-', linewidth=1)
     axes[1].axhline(0, color='k', linestyle='--', alpha=0.5)
     axes[1].set_ylabel('DNL (LSB)')
     axes[1].set_title(f'Differential Non-Linearity (Max: {dnl_max:.2f} LSB)')
     
-    # 4c. INL
     axes[2].plot(codes, inl, 'm-', linewidth=1)
     axes[2].axhline(0, color='k', linestyle='--', alpha=0.5)
     axes[2].set_xlabel('Código ADC')
@@ -145,7 +201,25 @@ def analyze_and_plot_with_linearity(adc_data):
     
     plt.tight_layout()
     plt.show()
+
 if __name__ == '__main__':
-    data = capture_uart_data()
-    if data is not None:
-        analyze_and_plot_with_linearity(data)
+    # 1. Capturar todos los datos secuencialmente
+    temps_in_c, dc_data_array, temps_out_c = run_capture_sequence()
+    
+    # 2. Mostrar resumen de temperaturas
+    if temps_in_c is not None and temps_out_c is not None and len(temps_in_c) > 0 and len(temps_out_c) > 0:
+        mean_in = np.mean(temps_in_c)
+        mean_out = np.mean(temps_out_c)
+        
+        print("\n" + "="*45)
+        print(" RESUMEN DE TEMPERATURAS")
+        print("="*45)
+        print(f"Temperatura Inicial: {mean_in:.2f} °C")
+        print(f"Temperatura Final  : {mean_out:.2f} °C")
+        print("="*45)
+        
+    # 3. Analizar y graficar datos DC
+    if dc_data_array is not None and len(dc_data_array) > 0:
+        analyze_and_plot_with_linearity(dc_data_array)
+    else:
+        print("\nError: No se capturaron suficientes datos DC para el análisis.")

@@ -1,7 +1,7 @@
 import serial
 import matplotlib.pyplot as plt
 
-PUERTO = 'COM6'
+PUERTO = '/dev/ttyACM0' 
 BAUDIOS = 115200
 COMANDO_TEMP = b'\x02'
 NUM_MUESTRAS = 10

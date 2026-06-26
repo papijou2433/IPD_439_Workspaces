@@ -4,8 +4,8 @@
 #include "usart.h"
 #include "main.h"
 
-#define datos 40000
-#define MAX_TEMP_SAMPLES 10 // 2 Hz * 5 segundos = 10 muestras
+#define datos 16384
+#define MAX_TEMP_SAMPLES 1 // 2 Hz * 5 segundos = 10 muestras
 
 volatile int counter = 0;
 volatile int data = 0;

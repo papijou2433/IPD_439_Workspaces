@@ -1,4 +1,5 @@
-#define NUM_SAMPLES 40000 
+//#define NUM_SAMPLES 40000 
+#define NUM_SAMPLES 16384
 #define LED_BLINK_ms 500
 
 const int adcPin = 1;
@@ -30,7 +31,8 @@ void setup() {
   analogReadResolution(12);
   timer = timerBegin(1000000);
   timerAttachInterrupt(timer, &onTimer);
-  timerAlarm(timer, 250, true, 0); // Freq 4kHz
+  timerAlarm(timer, 100, true, 0); // Freq 10kHz
+  //timerAlarm(timer, 20, true, 0); // Freq 50kHz
   
   timerStop(timer);
 }
@@ -88,6 +90,7 @@ void loop() {
     if (counter >= NUM_SAMPLES) {
       busy = false;
       done = true;
+      counter=0;
       timerStop(timer);
     }
   }

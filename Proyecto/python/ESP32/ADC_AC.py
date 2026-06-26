@@ -4,28 +4,31 @@ import sys
 import numpy as np
 import matplotlib.pyplot as plt
 
-PORT = '/dev/ttyACM0'
+PORT = '/dev/ttyACM0' 
 BAUDRATE = 115200
 SAMPLES = 16384
-FS = 100000
+FS = 10000
 TIMEOUT = 20
 
 def capture_uart_data(command_byte):
     print(f"Abriendo puerto {PORT} a {BAUDRATE} baudios...")
     adc_data = []
+    temps = []
     
     try:
         with serial.Serial(PORT, BAUDRATE, timeout=TIMEOUT) as ser:
+
             ser.dtr = True
             ser.rts = True
-            time.sleep(2)
+            
             ser.reset_input_buffer()
+            time.sleep(0.5) # Pausa más corta, solo para estabilizar buffer
             
             print(f"Enviando comando ({hex(command_byte[0])})...")
             ser.write(command_byte)
             ser.flush()
             
-            print(f"Recibiendo {SAMPLES} muestras...")
+            print(f"Recibiendo temperaturas y {SAMPLES} muestras...")
             lines_received = 0
             
             while lines_received < SAMPLES:
@@ -39,17 +42,21 @@ def capture_uart_data(command_byte):
                     if not decoded_line:
                         continue
                         
-                    adc_data.append(int(decoded_line))
-                    lines_received += 1
+                    if '.' in decoded_line:
+                        if len(temps) < 2:
+                            temps.append(float(decoded_line))
+                    else:
+                        adc_data.append(int(decoded_line))
+                        lines_received += 1
                         
                 except ValueError:
                     pass
 
     except serial.SerialException as e:
         print(f"Error de comunicación serial: {e}")
-        return None
+        return None, None
 
-    return np.array(adc_data)
+    return np.array(adc_data), temps
 
 def obtener_potencia_banda(arreglo_potencia, bin_central, span):
     inicio = max(0, bin_central - span)
@@ -99,8 +106,10 @@ def calcular_metricas_ac(datos, fs):
     return frecuencia_fundamental, thd_db, sinad_db, enob, fft_mag, fs/N
 
 def graficar_espectro(fft_mag, resolucion_freq, f_fund, thd, sinad, enob):
-    fft_mag = np.where(fft_mag == 0, 1e-12, fft_mag)
-    fft_db = 20 * np.log10(fft_mag)
+    
+    max_amp_lsb = 4095.0 / 2.0 
+    fft_mag_norm = np.where(fft_mag == 0, 1e-12, fft_mag) / max_amp_lsb
+    fft_db = 20 * np.log10(fft_mag_norm)
     
     frecuencias = np.arange(len(fft_mag)) * resolucion_freq
     
@@ -143,7 +152,7 @@ if __name__ == '__main__':
         print("Error: Formato inválido. Debes ingresar un número entero o hexadecimal.")
         sys.exit(1)
 
-    datos_adc = capture_uart_data(command_byte)
+    datos_adc,temps = capture_uart_data(command_byte)
     
     if datos_adc is not None and len(datos_adc) > 0:
         ceros = np.sum(datos_adc == 0.0)

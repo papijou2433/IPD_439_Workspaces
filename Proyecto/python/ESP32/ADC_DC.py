@@ -8,11 +8,11 @@ from scipy import stats
 PORT = '/dev/ttyACM0'      
 BAUDRATE = 115200     
 SAMPLES = 40000       
-TIMEOUT = 20         
+TIMEOUT = 45       
 BITS = 12
-V_REF = 1.75           
-V_MAX_IN = 1.675     
-V_MIN_IN = 0.075      
+V_REF = 3.3
+V_MAX_IN = 3.1 
+V_MIN_IN = 0.1*0.95-0.025
 MAX_CODE = (2**BITS) - 1
 
 def capture_uart_data(command_byte):
@@ -22,9 +22,9 @@ def capture_uart_data(command_byte):
     
     try:
         with serial.Serial(PORT, BAUDRATE, timeout=TIMEOUT) as ser:
-            # Desactivar DTR/RTS previene reinicios erráticos en USB CDC Nativo
-            ser.setDTR(True)
-            ser.setRTS(True)
+
+            ser.dtr = True
+            ser.rts = True
             
             ser.reset_input_buffer()
             time.sleep(0.5) # Pausa más corta, solo para estabilizar buffer

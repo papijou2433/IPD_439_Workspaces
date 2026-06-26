@@ -36,7 +36,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define datos 40000
+#define datos 16384
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
