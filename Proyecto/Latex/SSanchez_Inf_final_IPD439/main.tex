@@ -41,8 +41,8 @@ La validación de periféricos de señal mixta exige un alto rigor técnico y an
 Los ADCs implementados en la STM32 y ESP32 son de aproximación sucesiva (SAR), esta arquitectura genera N comparaciones de manera sucesiva para una sola medición y, al igual que otras requiere, de un DAC interno para generar estas comparaciones.
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.3\linewidth]{figures/SA_ADC_block_diagram.png}
-    \caption{Arquitectura general de un SAR ADC(imagen obtenida de \href{https://en.wikipedia.org/wiki/Successive-approximation_ADC}{wikipedia}})
+    \includegraphics[width=0.4\linewidth]{figures/diagrama_SAR.png}
+    \caption{Arquitectura general de un SAR ADC}
     \label{fig:sar}
 \end{figure}
 \subsection{Arquitectura del DAC}
@@ -69,7 +69,11 @@ La caracterización completa y apropiada de estos periféricos representa un tra
     \begin{equation}
         DNL(k) = \frac{V_{step}(k) - V_{LSB}}{V_{LSB}}.
     \end{equation}
-    Un valor de $-1$ LSB indicaría la presencia de códigos perdidos (\textit{missing codes}).
+    Sin embargo, debido a que los datos de la medición son almacenados en forma de histograma, más que señal continua del tiempo. El método de medición es el siguiente:
+    \begin{equation}
+    	DNL(k) = \frac{h(k)_{real}}{h(k)_{esperado}}-1
+    \end{equation}
+    Un valor de $DNL(k) = -1$ LSB indicaría la presencia de códigos perdidos en ese código k.
     \item \textbf{INL (No Linealidad Integral):} Representa la desviación máxima de la curva de transferencia real respecto a una línea recta ideal (generalmente calculada mediante el método de puntos extremos o mejor ajuste). Se puede entender como la acumulación de los errores diferenciales:
     \begin{equation}
         INL(k) = \sum_{i=1}^{k} DNL(i).
@@ -113,11 +117,10 @@ Donde $M$ es el número total de muestras capturadas en el registro y $J$ es el 
 \subsubsection{Selección de filtro antialiasing}
 La caracterización de parámetros dinámicos, como el SINAD y el ENOB, asume que la señal de estímulo inyectada al ADC es una onda senoidal espectralmente pura. Sin embargo, los generadores de señales comerciales introducen ruido térmico de banda ancha y distorsión armónica intrínseca que, de no ser mitigados, se reflejarán negativamente en las métricas del microcontrolador, limitando la medición al rendimiento del instrumento y no al del silicio bajo prueba.
 \\
-Para evitar el solapamiento espectral (aliasing) de estas componentes de alta frecuencia en la banda base digital, se implementó un filtro pasa-bajos RC pasivo de primer orden en la entrada del ADC. El diseño consta de una resistencia en serie de $50\ \Omega$, acoplada a la impedancia de salida del generador, y un capacitor de derivación de $1\ \mu\text{F}$. Esta configuración establece una frecuencia de corte ($f_c$) calculada mediante la expresión:\\
+Para evitar el solapamiento espectral (aliasing) de estas componentes de alta frecuencia en la banda base digital, se implementó un filtro pasa-bajos RC pasivo de primer orden en la entrada del ADC. El diseño consta de una resistencia en serie de $50\ \Omega$, acoplada a la impedancia de salida del generador, y un capacitor de derivación de $1\ \mu\text{F}$. Esta configuración establece una frecuencia de corte ($f_c$) de $3.18\text{ kHz}$ calculada mediante la expresión:\\
 \begin{equation}
     f_c = \frac{1}{2\pi R C}.
 \end{equation}
-Evaluando los componentes, se obtiene una frecuencia de corte aproximada de $3.18\text{ kHz}$.
 \subsection{Variaciones de Temperatura}
 Es importante notar que la temperatura juega un rol crucial a la hora de generar las pruebas, pues debido a la naturaleza de los semiconductores, sus parámetros intrínsecos son altamente dependientes de las fluctuaciones térmicas. En la caracterización de periféricos de señal mixta como ADCs y DACs, el incremento de la temperatura de la pastilla de silicio impacta directamente en el desempeño estático y dinámico a través de diversos mecanismos físicos:
 \begin{itemize}
@@ -131,18 +134,18 @@ Es importante notar que la temperatura juega un rol crucial a la hora de generar
 \subsection{Protocolos de comunicación utilizados}
 Para poder extraer los resultados del ADC, se utilizó el protocolo de comunicación serial UART. Este protocolo permitirá enviar todos los resultados de las mediciones del ADC desde la tarjeta de desarrollo hacia el computador para su posterior procesamiento en python.
 \section{Estado del Arte}
-ES importante notar que este trabajo no es algo innovador ni de vanguardia, más bien apunta a ser algo técnico, estandarizado y riguroso. Se destaca que para la obtención de resultados se siguen los estándares IEEE 1658 ~\cite{DAC} e IEEE 1241 ~\cite{ADC} en conjunto con las recomendaciones del libro de Analog Discovery en ~\cite{Analog_devices}. Finalmente, se reitera que este es un trabajo de carácter más técnico que de investigación, una búsqueda de conteniendo palabras claves ''ADC Caractherization''  por IEEE Xplore y google scholar si bien muestran investigaciones publicadas declarando metodologías, hasta el entendimiento del autor de este reporte, estas son maneras distinta de describir los mismos pasos del estandar IEEE 1241 o metodologías para caracterizar periféricos de señal mixta los cuales no van al caso, como ADCs de sobre muestreo o caracterización en circuitos integrados.
+Es importante notar que este trabajo no es algo innovador ni de vanguardia, más bien apunta a ser algo técnico, estandarizado y riguroso. Se destaca que para la obtención de resultados se siguen los estándares IEEE 1658 ~\cite{DAC} e IEEE 1241 ~\cite{ADC} en conjunto con las recomendaciones del libro de Analog Discovery en ~\cite{Analog_devices}. Finalmente, se reitera que este es un trabajo de carácter más técnico que de investigación, una búsqueda de conteniendo palabras claves ''ADC Caractherization''  por IEEE Xplore y google scholar si bien muestran investigaciones publicadas declarando metodologías, hasta el entendimiento del autor de este reporte, estas son maneras distinta de describir los mismos pasos del estandar IEEE 1241 o metodologías para caracterizar periféricos de señal mixta los cuales no van al caso, como ADCs de sobre muestreo o caracterización en circuitos integrados.
 \section{Objetivos}
 \begin{quote}
 Validar métricas de desempeño de periféricos análogos de los microcontroladores STM32 L476RG y ESP32 S3 mini, mediante la implementación de estándares IEEE.   
 \end{quote}
 \begin{description}
-    \item[OE1:] Caracterizar el DAC de la STM32L476RG.
-    \item[OE2:] Caracterizar el ADC de la STM32L476RG y ESP32 S3 Mini.
-    \item[OE3:] Comparar el desempeño de periféricos de señal mixta entre estos microcontroladores.
+    \item[OE1:] Caracterizar el DAC de la STM32L476RG
+    \item[OE2:] Caracterizar el ADC de la STM32L476RG y ESP32 S3 Mini
+    \item[OE3:] Caracterizar el rendimiento de los ADC de estos microcontroladores ante distintas temperaturas
 \end{description}
 \section{Metodología}
-Para cumplir con los objetivos planteados, se diseñó un entorno de pruebas que funciona de manera independiente del generador de señales utilizado, para así poder ignorar la fase de la medición y la fase actual de la señal de entrada. En su totalidad, este sistema está compuesto por un computador personal, un filtro pasa-bajos, el microcontrolador a probar y un generador de señales en modo \textit{free run}. En la Figura \ref{fig:entorno} se puede visualizar el entorno de trabajo utilizado de manera gráfica para las mediciones de DC y AC del ADC, y DC del DAC de la STM32.
+Para cumplir con los objetivos planteados, se diseñó un entorno de pruebas que funciona de manera independiente del generador de señales utilizado, para así poder ignorar la fase de la medición y la fase actual de la señal de entrada. En su totalidad, este sistema está compuesto por un computador personal, un filtro pasa-bajos, el microcontrolador a probar y un generador de señales en modo \textit{free run}. En la Figura \ref{fig:entorno} se puede visualizar el entorno de trabajo utilizado de manera gráfica para las mediciones de DC y AC del ADC, y DC del DAC de la STM32.\\
 \begin{figure}[h]
     \centering
     \begin{subfigure}{0.4\textwidth}
@@ -158,14 +161,11 @@ Para cumplir con los objetivos planteados, se diseñó un entorno de pruebas que
     \caption{Entornos de trabajo utilizados para cada periférico}
     \label{fig:entorno}
 \end{figure}
-El firmware implementado para obtener las características del ADC y DAC mantiene una arquitectura de ejecución simple y directa, presentando leves diferencias operativas entre sí. En ambos casos, el proceso de medición se inicializa mediante el protocolo UART, enviando un dato de 8 bits de control (\texttt{0x01}) para dar inicio a la conversión. Posteriormente se activa el timer a utilizar (Timer 2 en el caso de la STM32). Transcurrido el tiempo de adquisición determinado por la cantidad de datos a medir, se detiene el timer y se da inicio al envío de datos mediante UART. Finalmente, esta información es procesada y 
-
- En ambos casos, el proceso se inicia de forma remota mediante el protocolo UART, enviando un dato de 8 bits de control (\texttt{0x01}) para dar inicio a la conversión. Posteriormente, se activan las interrupciones del Timer 2 para fijar una frecuencia de muestreo ( kHz para el ADC y 2Hz para el DAC). Transcurrido el tiempo de adquisición determinado (10 segundos para el ADC y cerca de 2.5 segundos para el DAC), las tramas de datos obtenidas se transmiten al computador mediante UART. Finalmente, esta información es procesada y tabulada a través de un \textit{script} de Python, encargado de extraer el comportamiento en corriente continua y calcular las métricas de error correspondientes frente al modelo ideal.
+El firmware implementado para obtener las características del DAC en la STM32 mantiene una arquitectura de ejecución simple. Iniciando el proceso de captura mediante la recepción de un comando de 8 bits mediante UART, dando inicio al proceso de conversión y activación del timer 2. Transcurrido el tiempo de adquisición determinado por la cantidad de datos a medir, se detiene el timer y se da inicio al procesamiento de datos mediante el archivo .csv generado por el programa waveforms.
 \\
-Adicionalmente, se destaca que el firmware implementado para obtener las características de corriente alterna del ADC es el mismo para corriente continua.
-%De manera similar, el firmware implementado para obtener las características de corriente alterna del ADC se mantiene idéntico, con la excepción de que se fija una frecuencia de muestreo de 100 kHz y ya no se utilizan interrupciones del Timer 2 para generar mediciones. Para lograr esto, se deshabilitan las interrupciones del Timer 2, se habilita el \textit{trigger} del ADC para que este opere mediante un evento por hardware del Timer 2 y, finalmente, se habilita la transferencia de datos continua por DMA.
+De manera similar, el firmware implementado para obtener las características del ADC de ambos microcontroladores mantienen semejanza con lo realizado para el DAC. En este caso, se añade la medición de temperaturas al inicio y al final de la conversión. Es importante destacar que, las mediciones de temperaturas son realizadas mediante el sensor interno de temperatura y posteriormente procesadas mediante un ADC, este siendo el ADC1 en caso de la STM32 y un ADC dedicado en arquitectura delta sigma en caso de la ESP32.
 \\
-Finalmente, para poder medir la temperatura interna del microcontrolador, se hace uso del sensor de temperatura interno, el cual está conectado al ADC1 de la STM32, y de un secador de pelo que será utilizado para elevar la temperatura del microcontrolador al emanar calor directamente sobre el chip. Estas mediciones se realizan en un entorno de pruebas idéntico al de las mediciones de DC del ADC, esta vez utilizando el Timer 3 en lugar del Timer 2, y a una frecuencia de 2 Hz.
+Finalmente, se destaca que el firmware implementado para obtener las métricas del ADC es el mismo para obtener métricas DC y AC, en ambos casos la frecuencia de toma de muestras es de 10kHz. Esto debido a que no se logró habilitar el uso de DMA directamente con el ADC de la tarjeta ESP32 para poder obtener una frecuencia de toma de muestras de 100kHz, de todas formas, se encuentra disponible en el repositorio de este proyecto el uso de DMA de forma continua para el ADC de la STM32 a una frecuencia de 100kHz.
 \section{Resultados}
 Utilizando hasta 3 generadores de señales distintos para la obtención de métricas de corriente continua y 2 para corriente alterna, se obtuvieron las métricas de desempeño para los periféricos de señal mixta de la STM32 y ESP32. A continuación, se detallan los valores registrados para el convertidor análogo-digital (ADC) y el convertidor digital-análogo (DAC).
 \subsection{Resultados del ADC (STM32)}

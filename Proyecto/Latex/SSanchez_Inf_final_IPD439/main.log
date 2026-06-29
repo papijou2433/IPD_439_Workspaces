@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.26)  26 JUN 2026 15:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.6.26)  27 JUN 2026 14:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -724,13 +724,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-di
 st/fonts/enc/dvips/base/8r.enc}]
-<figures/SA_ADC_block_diagram.png, id=111, 259.6902pt x 208.1376pt>
-File: figures/SA_ADC_block_diagram.png Graphic file (type png)
-<use figures/SA_ADC_block_diagram.png>
-Package pdftex.def Info: figures/SA_ADC_block_diagram.png  used on input line 4
-4.
-(pdftex.def)             Requested size: 140.92792pt x 112.95158pt.
-<figures/R2R_DAC.png, id=114, 397.485pt x 145.0218pt>
+<figures/diagrama_SAR.png, id=111, 346.1733pt x 149.96025pt>
+File: figures/diagrama_SAR.png Graphic file (type png)
+<use figures/diagrama_SAR.png>
+Package pdftex.def Info: figures/diagrama_SAR.png  used on input line 44.
+(pdftex.def)             Requested size: 187.89912pt x 81.39606pt.
+<figures/R2R_DAC.png, id=113, 397.485pt x 145.0218pt>
 File: figures/R2R_DAC.png Graphic file (type png)
 <use figures/R2R_DAC.png>
 Package pdftex.def Info: figures/R2R_DAC.png  used on input line 54.
@@ -744,7 +743,7 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-8.41992pt}.
 
-[2 <./figures/SA_ADC_block_diagram.png> <./figures/R2R_DAC.png>]
+[2 <./figures/diagrama_SAR.png> <./figures/R2R_DAC.png>]
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 22.41992pt, for example:
@@ -754,12 +753,12 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-8.41992pt}.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 110--113
+Underfull \hbox (badness 10000) in paragraph at lines 114--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--117
+Underfull \hbox (badness 10000) in paragraph at lines 118--121
 
  []
 
@@ -773,24 +772,24 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 
 [4]
 
-LaTeX Warning: Citation 'DAC' on page 5 undefined on input line 134.
+LaTeX Warning: Citation 'DAC' on page 5 undefined on input line 137.
 
 
-LaTeX Warning: Citation 'ADC' on page 5 undefined on input line 134.
+LaTeX Warning: Citation 'ADC' on page 5 undefined on input line 137.
 
 
-LaTeX Warning: Citation 'Analog_devices' on page 5 undefined on input line 134.
+LaTeX Warning: Citation 'Analog_devices' on page 5 undefined on input line 137.
 
 
-<figures/ADC_diagrama.png, id=154, 284.7438pt x 358.82056pt>
+<figures/ADC_diagrama.png, id=153, 284.7438pt x 358.82056pt>
 File: figures/ADC_diagrama.png Graphic file (type png)
 <use figures/ADC_diagrama.png>
-Package pdftex.def Info: figures/ADC_diagrama.png  used on input line 150.
+Package pdftex.def Info: figures/ADC_diagrama.png  used on input line 153.
 (pdftex.def)             Requested size: 169.10806pt x 213.10393pt.
-<figures/DAC_diagrama.png, id=155, 289.5618pt x 343.5234pt>
+<figures/DAC_diagrama.png, id=154, 289.5618pt x 343.5234pt>
 File: figures/DAC_diagrama.png Graphic file (type png)
 <use figures/DAC_diagrama.png>
-Package pdftex.def Info: figures/DAC_diagrama.png  used on input line 155.
+Package pdftex.def Info: figures/DAC_diagrama.png  used on input line 158.
 (pdftex.def)             Requested size: 169.10806pt x 200.62752pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -804,6 +803,9 @@ Package fancyhdr Warning: \headheight is too small (14.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-8.41992pt}.
 
 [5]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 Package fancyhdr Warning: \headheight is too small (14.0pt): 
 (fancyhdr)                Make it at least 22.41992pt, for example:
@@ -854,9 +856,9 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18722 strings out of 474222
- 327030 string characters out of 5748733
- 1942975 words of memory out of 5000000
+ 18723 strings out of 474222
+ 326987 string characters out of 5748733
+ 1943975 words of memory out of 5000000
  40739 multiletter control sequences out of 15000+600000
  573881 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -873,10 +875,10 @@ fonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 313011 bytes).
+Output written on main.pdf (8 pages, 284028 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
+ 256 PDF objects out of 1000 (max. 8388607)
  209 compressed objects within 3 object streams
- 50 named destinations out of 1000 (max. 500000)
+ 51 named destinations out of 1000 (max. 500000)
  221 words of extra memory for PDF output out of 10000 (max. 10000000)
 

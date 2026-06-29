@@ -163,6 +163,8 @@ if __name__ == '__main__':
         print("="*45)
         print(f"Amplitud Peak-to-Peak            : {amplitud_lsb} LSB")
         print(f"Muestras perdidas (Caídas a 0.0) : {ceros} muestras")
+        print(f"Temperatura Inicial : {temps[0]} °C")
+        print(f"Temperatura Final : {temps[1]} °C")
         
         f_fund, thd, sinad, enob, fft_mag, res_freq = calcular_metricas_ac(datos_adc, FS)
         

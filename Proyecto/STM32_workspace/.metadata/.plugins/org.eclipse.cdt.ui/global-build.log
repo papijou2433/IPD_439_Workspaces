@@ -75,3 +75,10 @@ Finished building: default.size.stdout
  
 Finished building: ADC_DC.list
  
+19:22:32 **** Build of configuration Debug for project ADC_DC ****
+make -j12 all 
+arm-none-eabi-size   ADC_DC.elf 
+   text	   data	    bss	    dec	    hex	filename
+  29988	    100	  35196	  65284	   ff04	ADC_DC.elf
+Finished building: default.size.stdout
+ 
