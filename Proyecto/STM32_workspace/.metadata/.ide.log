@@ -335,3 +335,5 @@
 2026-06-29 19:23:07,927 [INFO] ThirdParty:978 - Integrity check success = true
 2026-06-29 19:23:07,927 [INFO] IntegrityCheckThread:100 - exiting critical section [integrity check]
 2026-06-29 19:23:07,927 [INFO] IntegrityCheckThread:103 - End integrity checks thread
+2026-06-29 19:36:29,233 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2026-06-29 19:36:30,989 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
